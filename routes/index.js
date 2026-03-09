@@ -13,6 +13,7 @@ const { runNutritionAgent } = require('../agents/nutritionAgent');
 const { runIngestionAgent } = require('../agents/ingestionAgent');
 const { runTransferAgent } = require('../agents/transferAgent');
 const { runRagPatientSummary, runRagDoctorQuery } = require('../agents/ragDoctorAgent');
+const { getAllPatientsLite } = require('../rag/patientContext');
 const blockchain = require('../blockchain/logger');
 const USERS_FILE = path.join(__dirname, '../data/users.json');
 const users = require('../data/users.json');
@@ -117,14 +118,14 @@ function listPatientsFromData() {
     });
   }
 
-  const files = fs.readdirSync(DATA_DIR).filter((name) => /^patient_.*\\.json$/i.test(name));
+  const files = fs.readdirSync(DATA_DIR).filter((name) => /^patient_.*\.json$/i.test(name));
   return files.map((file) => {
     const p = JSON.parse(fs.readFileSync(path.join(DATA_DIR, file), 'utf8'));
     const diagnoses = [...(p.primaryDiagnosis || []), ...(p.secondaryDiagnosis || [])];
     return {
       patient_id: p.id,
       name: p.name,
-      email: p.email || `${String(p.name || 'patient').toLowerCase().replace(/\\s+/g, '.')}@patient.local`,
+      email: p.email || `${String(p.name || 'patient').toLowerCase().replace(/\s+/g, '.')}@patient.local`,
       age: p.age,
       gender: p.gender,
       diagnosis: diagnoses,
@@ -376,8 +377,24 @@ router.post('/auth/register', (req, res) => {
   return res.status(201).json({ user: safeUser, role });
 });
 
-router.get('/patients', (req, res) => {
+router.get('/patients', async (req, res) => {
   try {
+    const mongoPatients = await getAllPatientsLite().catch(() => []);
+    if (Array.isArray(mongoPatients) && mongoPatients.length > 0) {
+      const normalized = mongoPatients.map((p) => ({
+        patient_id: p.patient_id,
+        name: p.name,
+        email: p.email || `${String(p.name || 'patient').toLowerCase().replace(/\s+/g, '.')}@patient.local`,
+        age: p.age ?? null,
+        gender: p.gender ?? 'Unknown',
+        diagnosis: p.diagnosis || [],
+        allergies: p.allergies || [],
+        status: p.status || 'stable',
+        lastVisit: p.lastVisit || null,
+      }));
+      return res.json(normalized);
+    }
+
     const patients = listPatientsFromData();
     return res.json(patients);
   } catch (e) {
