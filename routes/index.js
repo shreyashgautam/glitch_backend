@@ -12,15 +12,18 @@ const { runReceptionist } = require('../agents/receptionistAgent');
 const { runNutritionAgent } = require('../agents/nutritionAgent');
 const { runIngestionAgent } = require('../agents/ingestionAgent');
 const { runTransferAgent } = require('../agents/transferAgent');
-const { runOrchestratorAgent } = require('../agents/orchestratorAgent');
-const { processUploadedDocument } = require('../agents/ocrAgent');
 const { runRagPatientSummary, runRagDoctorQuery } = require('../agents/ragDoctorAgent');
 const blockchain = require('../blockchain/logger');
 const USERS_FILE = path.join(__dirname, '../data/users.json');
 const users = require('../data/users.json');
 
-const upload = multer({ dest: path.join(__dirname, '../uploads/') });
-const uploadAny = multer({ dest: path.join(__dirname, '../uploads/') });
+const UPLOAD_DIR = process.env.VERCEL
+  ? '/tmp'
+  : path.join(__dirname, '../uploads/');
+if (!fs.existsSync(UPLOAD_DIR)) fs.mkdirSync(UPLOAD_DIR, { recursive: true });
+
+const upload = multer({ dest: UPLOAD_DIR });
+const uploadAny = multer({ dest: UPLOAD_DIR });
 const DATA_DIR = path.join(__dirname, '../data');
 const DRUG_INTERACTIONS_FILE = path.join(DATA_DIR, 'drug_interactions.json');
 const DATASET_DIR = process.env.DATASET_DIR ? path.resolve(process.env.DATASET_DIR) : null;
@@ -655,6 +658,7 @@ router.post('/agent/ocr', uploadAny.any(), async (req, res) => {
   blockchain.addBlock('DOCUMENT_UPLOAD', req.headers['x-actor-id'] || 'PATIENT', req.body.patientId || 'UNKNOWN', `Document uploaded: ${uploaded.originalname}`);
 
   try {
+    const { processUploadedDocument } = require('../agents/ocrAgent');
     const result = await processUploadedDocument(uploaded.path, req.body.apiKey, req.body.model);
     blockchain.addBlock('OCR_PROCESSING', 'SYSTEM', req.body.patientId || 'UNKNOWN', `OCR processing complete - ${result.success ? 'success' : 'failed'}`);
 
@@ -692,6 +696,7 @@ router.post('/agent/intake', upload.single('document'), async (req, res) => {
   if (!patientId) return res.status(400).json({ error: 'patientId required' });
 
   try {
+    const { runOrchestratorAgent } = require('../agents/orchestratorAgent');
     const result = await runOrchestratorAgent({
       patientId,
       filePath: req.file.path,
