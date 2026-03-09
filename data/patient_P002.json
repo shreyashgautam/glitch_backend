@@ -1,0 +1,92 @@
+{
+  "id": "P002",
+  "name": "Meenakshi Pillai",
+  "age": 45,
+  "gender": "Female",
+  "bloodGroup": "O+",
+  "phone": "+91 94440 78901",
+  "address": "22/5, GST Road, Guduvanchery, Chennai - 603202",
+  "emergencyContact": "Suresh Pillai (Husband) — +91 94440 11223",
+  "registeredAt": "Kathir Memorial Hospital",
+  "primaryDiagnosis": ["Gestational Hypertension (O13)", "Hypothyroidism (E03)"],
+  "secondaryDiagnosis": ["Iron Deficiency Anaemia (D50)"],
+  "allergies": ["No known drug allergies"],
+  "medications": [
+    { "name": "Levothyroxine", "dose": "75mcg", "frequency": "Once daily — fasting, 30 mins before breakfast", "since": "2025-03-20", "indication": "Hypothyroidism — synthetic thyroid hormone replacement", "caution": "Do NOT take with iron supplements or calcium — take 4 hours apart", "reminder": ["06:30"] },
+    { "name": "Ferrous Sulphate", "dose": "200mg", "frequency": "Twice daily after meals", "since": "2025-03-20", "indication": "Iron Deficiency Anaemia — iron supplementation", "caution": "Take 4 hours AFTER Levothyroxine. Causes dark stools — normal.", "reminder": ["13:00", "21:00"] },
+    { "name": "Labetalol", "dose": "100mg", "frequency": "Twice daily", "since": "2025-05-10", "indication": "Hypertension — alpha and beta blocker, safe for women", "caution": "Do not stop abruptly. Monitor for bradycardia.", "reminder": ["09:00", "21:00"] }
+  ],
+  "labResults": {
+    "TSH": [
+      { "date": "2025-03-10", "value": 8.2, "unit": "mIU/L", "referenceRange": "0.4-4.0", "status": "critical" },
+      { "date": "2025-06-15", "value": 6.1, "unit": "mIU/L", "referenceRange": "0.4-4.0", "status": "high" },
+      { "date": "2025-09-20", "value": 3.8, "unit": "mIU/L", "referenceRange": "0.4-4.0", "status": "normal" },
+      { "date": "2025-12-10", "value": 2.1, "unit": "mIU/L", "referenceRange": "0.4-4.0", "status": "normal" },
+      { "date": "2026-02-15", "value": 4.8, "unit": "mIU/L", "referenceRange": "0.4-4.0", "status": "borderline" }
+    ],
+    "Haemoglobin": [
+      { "date": "2025-03-10", "value": 8.4, "unit": "g/dL", "referenceRange": ">12.0", "status": "critical" },
+      { "date": "2025-05-20", "value": 9.8, "unit": "g/dL", "referenceRange": ">12.0", "status": "high" },
+      { "date": "2025-08-18", "value": 11.2, "unit": "g/dL", "referenceRange": ">12.0", "status": "borderline" },
+      { "date": "2025-11-15", "value": 12.1, "unit": "g/dL", "referenceRange": ">12.0", "status": "normal" },
+      { "date": "2026-02-15", "value": 11.6, "unit": "g/dL", "referenceRange": ">12.0", "status": "borderline" }
+    ],
+    "BloodPressure": [
+      { "date": "2025-03-10", "systolic": 135, "diastolic": 85, "status": "borderline" },
+      { "date": "2025-04-15", "systolic": 138, "diastolic": 88, "status": "high" },
+      { "date": "2025-05-20", "systolic": 142, "diastolic": 90, "status": "high" },
+      { "date": "2025-07-10", "systolic": 136, "diastolic": 84, "status": "borderline" },
+      { "date": "2025-09-20", "systolic": 130, "diastolic": 82, "status": "normal" },
+      { "date": "2025-11-15", "systolic": 128, "diastolic": 80, "status": "normal" },
+      { "date": "2026-02-15", "systolic": 132, "diastolic": 84, "status": "borderline" }
+    ],
+    "SerumFerritin": [
+      { "date": "2025-03-10", "value": 6, "unit": "ng/mL", "referenceRange": "12-150", "status": "critical" },
+      { "date": "2025-08-18", "value": 28, "unit": "ng/mL", "referenceRange": "12-150", "status": "normal" },
+      { "date": "2026-02-15", "value": 22, "unit": "ng/mL", "referenceRange": "12-150", "status": "normal" }
+    ]
+  },
+  "visits": [
+    {
+      "date": "2025-03-10",
+      "doctor": "Dr. Sharmila Ganesan",
+      "department": "Obstetrics & Gynaecology",
+      "chiefComplaint": "Fatigue, cold intolerance, weight gain, heavy periods",
+      "clinicalNote": "Patient presents with classical hypothyroid symptoms — fatigue, cold intolerance, weight gain of 4kg over 3 months, constipation. TSH 8.2 — significantly elevated. Initiating Levothyroxine 50mcg. Haemoglobin critically low at 8.4 — iron deficiency anaemia confirmed with ferritin 6. Starting Ferrous Sulphate 200mg twice daily. IMPORTANT: Counselled patient to take iron and thyroid medications 4 hours apart — absorption conflict. No known drug allergies. BP borderline 135/85 — monitoring.",
+      "plan": "Recheck TSH in 3 months. Haemoglobin in 3 months. BP monitoring at each visit."
+    },
+    {
+      "date": "2025-05-10",
+      "doctor": "Dr. Sharmila Ganesan",
+      "department": "Obstetrics & Gynaecology",
+      "chiefComplaint": "BP elevated on two consecutive readings",
+      "clinicalNote": "BP 142/90 at this visit — second elevated reading. Meets criteria for gestational hypertension. Starting Labetalol 100mg twice daily — safe choice for women. TSH 6.1 improving on Levothyroxine — dose increased to 75mcg. Haemoglobin 9.8 — improving. Patient reports she has been taking iron and thyroid tablet together in the morning — re-counselled on timing. Drug interaction: Levothyroxine + Ferrous Sulphate if taken together reduces absorption by up to 50%.",
+      "plan": "Levothyroxine dose increased to 75mcg. BP review in 4 weeks. Continue iron therapy."
+    },
+    {
+      "date": "2025-08-18",
+      "doctor": "Dr. Sharmila Ganesan",
+      "department": "Obstetrics & Gynaecology",
+      "chiefComplaint": "Routine follow-up",
+      "clinicalNote": "Excellent treatment response. TSH 3.8 — now within normal range. Haemoglobin 11.2 — near normal, significant recovery. BP responding to Labetalol — 130/82. Patient reports improved energy, reduced fatigue. Ferritin 28 — iron stores recovering. Cross-referring to Cardiology for BP optimisation and long-term cardiovascular monitoring.",
+      "plan": "Continue all medications. Cardiology cross-referral. Recheck TSH + Hb in 3 months."
+    },
+    {
+      "date": "2026-02-15",
+      "doctor": "Dr. Mugil",
+      "department": "Cardiology",
+      "chiefComplaint": "Cardiology cross-referral from Dr. Sharmila — BP management",
+      "clinicalNote": "Received cross-referral from Dr. Sharmila Ganesan. BP now 132/84 — reasonable control on Labetalol. TSH slight rise to 4.8 — may need Levothyroxine dose review, referred back to OB/GYN. Haemoglobin 11.6 — slight dip from 12.1. Drug timing conflict noted again in review: patient admitted to sometimes taking iron and thyroid tablet together — counselled again on strict 4-hour separation. No chest symptoms. ECG normal. Continue current regimen with closer monitoring.",
+      "plan": "Continue Labetalol. OB/GYN review for Levothyroxine dose. Monitor Hb. Repeat ECG in 6 months."
+    }
+  ],
+  "clinicalFlags": [
+    { "type": "MEDIUM", "flag": "TSH rising — possible dose review needed", "evidence": "TSH rose from 2.1 (Dec 2025) to 4.8 (Feb 2026) after normalising", "recommendation": "Consider Levothyroxine dose adjustment — for physician review" },
+    { "type": "MEDIUM", "flag": "Drug Interaction: Levothyroxine + Ferrous Sulphate", "evidence": "Patient repeatedly noted to take both tablets together — documented 3x", "recommendation": "Strict 4-hour separation counselling. Absorption up to 50% reduced if taken together — for physician review" },
+    { "type": "LOW", "flag": "Haemoglobin slight dip from normal", "evidence": "Hb dropped from 12.1 (Nov 2025) to 11.6 (Feb 2026)", "recommendation": "Monitor. Continue iron supplementation — for physician review" }
+  ],
+  "overdueTests": [
+    { "test": "Thyroid Function Test (TSH + T3 + T4)", "reason": "TSH borderline — full panel needed", "overdueDays": 0, "labUrl": "https://www.1mg.com/lab-tests/thyroid-profile-total-t3-t4-tsh-test-77" },
+    { "test": "Complete Blood Count (CBC)", "reason": "Haemoglobin monitoring — every 3 months on iron therapy", "overdueDays": 5, "labUrl": "https://www.1mg.com/lab-tests/complete-blood-count-cbc-test-46" }
+  ]
+}

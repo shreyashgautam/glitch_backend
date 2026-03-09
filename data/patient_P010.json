@@ -1,0 +1,178 @@
+{
+  "id": "P010",
+  "name": "Unknown",
+  "age": null,
+  "gender": null,
+  "bloodGroup": null,
+  "primaryDiagnosis": [
+    "Hypertension",
+    "Hypertension (HTN)",
+    "Diabetes Mellitus (DM)",
+    "Chronic Kidney Disease (CKD)"
+  ],
+  "secondaryDiagnosis": [],
+  "allergies": [],
+  "medications": [
+    {
+      "name": "T. Pan 40"
+    },
+    {
+      "name": "T. Telma 40"
+    },
+    {
+      "name": "T. Glycomet"
+    },
+    {
+      "name": "T. Met XL 25"
+    },
+    {
+      "name": "T. Ecosprin 75"
+    },
+    {
+      "name": "Telma AM 40/5"
+    },
+    {
+      "name": "Jalra M 50/500"
+    },
+    {
+      "name": "Atorva 10mg"
+    },
+    {
+      "name": "Augmentin 625mg"
+    }
+  ],
+  "labResults": {
+    "BloodPressure": [
+      {
+        "date": "2026-03-09",
+        "systolic": 150,
+        "diastolic": 90,
+        "source": "OCR_INGESTION"
+      },
+      {
+        "date": "2026-03-09",
+        "systolic": 150,
+        "diastolic": 90,
+        "source": "OCR_INGESTION"
+      }
+    ],
+    "HbA1c": [
+      {
+        "date": "2026-03-09",
+        "value": 8.4,
+        "source": "OCR_INGESTION"
+      }
+    ],
+    "SerumCreatinine": [
+      {
+        "date": "2026-03-09",
+        "value": 1.8,
+        "source": "OCR_INGESTION"
+      }
+    ],
+    "eGFR": [
+      {
+        "date": "2026-03-09",
+        "value": 45,
+        "source": "OCR_INGESTION"
+      }
+    ],
+    "Haemoglobin": [
+      {
+        "date": "2026-03-09",
+        "value": 10.1,
+        "source": "OCR_INGESTION"
+      }
+    ]
+  },
+  "visits": [
+    {
+      "date": "2026-03-09",
+      "doctor": "OCR Import",
+      "department": "Medical Records",
+      "chiefComplaint": "STV, Af dy, NE dugy",
+      "clinicalNote": "A 60-year-old male patient presented with symptoms noted as STV and Af dy. The patient is prescribed Pan 40, Telma 40, and Glycomet. Recommended laboratory investigations include HbA1c and Serum Creatinine.",
+      "plan": "HbA1c, Serum Creatinine",
+      "source": "OCR_INGESTION"
+    },
+    {
+      "date": "2026-03-09",
+      "doctor": "OCR Import",
+      "department": "Medical Records",
+      "chiefComplaint": "Dizziness, Body aches",
+      "clinicalNote": "A 60-year-old male patient presented with complaints of dizziness and body aches. Physical examination recorded a blood pressure of 150/90 mmHg. The patient was diagnosed with hypertension and prescribed a regimen including Telma, Met XL, and Ecosprin.",
+      "plan": "ECG",
+      "source": "OCR_INGESTION"
+    },
+    {
+      "date": "2026-03-09",
+      "doctor": "OCR Import",
+      "department": "Medical Records",
+      "chiefComplaint": "Cough, Fever, Dyspnoea",
+      "clinicalNote": "60-year-old patient presenting with cough, fever, and dyspnoea. Clinical findings and lab results indicate poorly controlled hypertension, diabetes, and stage 3 chronic kidney disease.",
+      "plan": "",
+      "source": "OCR_INGESTION"
+    }
+  ],
+  "clinicalFlags": [
+    {
+      "type": "HIGH",
+      "flag": "Reported symptom: STV",
+      "evidence": "Imported from OCR document",
+      "recommendation": "Physician review advised"
+    },
+    {
+      "type": "HIGH",
+      "flag": "Reported symptom: Af dy",
+      "evidence": "Imported from OCR document",
+      "recommendation": "Physician review advised"
+    },
+    {
+      "type": "HIGH",
+      "flag": "Reported symptom: NE dugy",
+      "evidence": "Imported from OCR document",
+      "recommendation": "Physician review advised"
+    },
+    {
+      "type": "HIGH",
+      "flag": "Reported symptom: Dizziness",
+      "evidence": "Imported from OCR document",
+      "recommendation": "Physician review advised"
+    },
+    {
+      "type": "HIGH",
+      "flag": "Reported symptom: Body aches",
+      "evidence": "Imported from OCR document",
+      "recommendation": "Physician review advised"
+    },
+    {
+      "type": "HIGH",
+      "flag": "Reported symptom: Cough",
+      "evidence": "Imported from OCR document",
+      "recommendation": "Physician review advised"
+    },
+    {
+      "type": "HIGH",
+      "flag": "Reported symptom: Fever",
+      "evidence": "Imported from OCR document",
+      "recommendation": "Physician review advised"
+    },
+    {
+      "type": "HIGH",
+      "flag": "Reported symptom: Dyspnoea",
+      "evidence": "Imported from OCR document",
+      "recommendation": "Physician review advised"
+    }
+  ],
+  "overdueTests": [
+    {
+      "test": "HbA1c"
+    },
+    {
+      "test": "Serum Creatinine"
+    },
+    {
+      "test": "ECG"
+    }
+  ]
+}

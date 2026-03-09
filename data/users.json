@@ -1,0 +1,12 @@
+{
+  "doctors": [
+    { "id": "D001", "name": "Dr. Nandakumar", "email": "nandakumar@kathir.in", "password": "doctor123", "department": "General Medicine & Diabetology", "specialisation": "Diabetology", "patients": ["P001"] },
+    { "id": "D002", "name": "Dr. Sharmila Ganesan", "email": "sharmila@kathir.in", "password": "doctor123", "department": "Obstetrics & Gynaecology", "specialisation": "OB/GYN", "patients": ["P002"] },
+    { "id": "D003", "name": "Dr. Mugil", "email": "mugil@kathir.in", "password": "doctor123", "department": "Cardiology", "specialisation": "Cardiology", "patients": ["P002"] },
+    { "id": "D004", "name": "Dr. Jenson Isaac", "email": "jenson@kathir.in", "password": "doctor123", "department": "Spine & Orthopaedics", "specialisation": "Orthopaedics", "patients": [] }
+  ],
+  "patients": [
+    { "id": "P001", "name": "Rajan Subramaniam", "email": "rajan@patient.in", "password": "patient123" },
+    { "id": "P002", "name": "Meenakshi Pillai", "email": "meenakshi@patient.in", "password": "patient123" }
+  ]
+}

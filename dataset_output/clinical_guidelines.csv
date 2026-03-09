@@ -1,0 +1,61 @@
+disease,test,frequency,target,guideline_source,notes
+Type 2 Diabetes,HbA1c,3 months,<7.0%,American Diabetes Association,As per physician discretion
+Type 2 Diabetes,Fasting Glucose,1 month,70-130 mg/dL,ADA 2024,Standard protocol
+Type 2 Diabetes,Kidney Function (eGFR),6 months,>60 mL/min,ADA 2024,Standard protocol
+Type 2 Diabetes,Urine Albumin,6 months,<30 mg/g,ADA 2024,Evidence-based
+Type 2 Diabetes,Lipid Panel,12 months,LDL <100 mg/dL,ADA 2024,Adjust if clinical concern
+Type 2 Diabetes,Eye Exam,12 months,No retinopathy,ADA 2024,As per physician discretion
+Type 2 Diabetes,Foot Exam,3 months,No ulcers,ADA 2024,As per physician discretion
+Type 2 Diabetes,Blood Pressure,1 month,<130/80 mmHg,ADA 2024,Adjust if clinical concern
+Hypertension,Blood Pressure,1 month,<130/80 mmHg,JNC 8,Adjust if clinical concern
+Hypertension,Kidney Function,6 months,>60 mL/min,JNC 8,Standard protocol
+Hypertension,Electrolytes,6 months,Normal range,JNC 8,Standard protocol
+Hypertension,ECG,12 months,Normal sinus rhythm,JNC 8,More frequent if uncontrolled
+Hypertension,Lipid Panel,12 months,Total <200 mg/dL,JNC 8,Adjust if clinical concern
+Coronary Artery Disease,ECG,6 months,No ischemic changes,ACC/AHA,Evidence-based
+Coronary Artery Disease,Lipid Panel,3 months,LDL <70 mg/dL,ACC/AHA,Adjust if clinical concern
+Coronary Artery Disease,Echo,12 months,EF >50%,ACC/AHA,Evidence-based
+Coronary Artery Disease,Stress Test,12 months,No inducible ischemia,ACC/AHA,As per physician discretion
+Coronary Artery Disease,INR (if on Warfarin),1 month,2.0-3.0,ACC/AHA,More frequent if uncontrolled
+Asthma,Peak Flow,1 month,>80% predicted,GINA,As per physician discretion
+Asthma,Spirometry,6 months,FEV1/FVC >0.7,GINA,Standard protocol
+Asthma,Eosinophil Count,6 months,<300 cells/μL,GINA,Evidence-based
+Chronic Kidney Disease,eGFR,3 months,>30 mL/min,KDIGO,Standard protocol
+Chronic Kidney Disease,Urine Albumin,3 months,<30 mg/g,KDIGO,Evidence-based
+Chronic Kidney Disease,Potassium,3 months,3.5-5.0 mEq/L,KDIGO,Standard protocol
+Chronic Kidney Disease,Phosphorus,3 months,2.5-4.5 mg/dL,KDIGO,More frequent if uncontrolled
+Chronic Kidney Disease,Hemoglobin,3 months,10-12 g/dL,KDIGO,Adjust if clinical concern
+Chronic Kidney Disease,PTH,6 months,Per CKD stage,KDIGO,As per physician discretion
+Rheumatoid Arthritis,DAS28 Score,3 months,<2.6 (remission),ACR/EULAR,Adjust if clinical concern
+Rheumatoid Arthritis,ESR/CRP,3 months,Normal range,ACR/EULAR,As per physician discretion
+Rheumatoid Arthritis,CBC (Methotrexate monitoring),3 months,Normal WBC,ACR/EULAR,Adjust if clinical concern
+Rheumatoid Arthritis,Liver Function,3 months,Normal,ACR/EULAR,As per physician discretion
+Rheumatoid Arthritis,Chest X-Ray,12 months,No infiltrates,ACR/EULAR,Standard protocol
+COPD,Spirometry,6 months,FEV1 trend,GOLD,More frequent if uncontrolled
+COPD,Sputum Culture,As needed,No pathogens,GOLD,Evidence-based
+COPD,Oxygen Saturation,1 month,>92%,GOLD,Standard protocol
+COPD,6MWT,6 months,>350 metres,GOLD,Standard protocol
+Heart Failure,BNP/NT-proBNP,3 months,<100 pg/mL,ESC,Evidence-based
+Heart Failure,Echo (EF),6 months,Monitor trend,ESC,Adjust if clinical concern
+Heart Failure,Electrolytes,1 month,Normal range,ESC,As per physician discretion
+Heart Failure,Renal Function,1 month,Stable creatinine,ESC,Standard protocol
+Heart Failure,Weight Monitoring,Weekly,<2 kg gain/week,ESC,Standard protocol
+Atrial Fibrillation,INR,1 month,2.0-3.0 (if on Warfarin),ESC,Adjust if clinical concern
+Atrial Fibrillation,ECG,3 months,Rate/rhythm control,ESC,Standard protocol
+Atrial Fibrillation,Thyroid Function,12 months,Normal TSH,ESC,As per physician discretion
+Hypothyroidism,TSH,3 months,0.4-4.0 mIU/L,ETA,Evidence-based
+Hypothyroidism,Free T4,6 months,0.8-1.8 ng/dL,ETA,More frequent if uncontrolled
+Dyslipidemia,Lipid Panel,3 months,LDL <100 mg/dL,ACC/AHA,More frequent if uncontrolled
+Dyslipidemia,CK Level (statin monitoring),6 months,<200 U/L,ACC/AHA,Evidence-based
+Dyslipidemia,Liver Function (statin monitoring),6 months,Normal,ACC/AHA,Evidence-based
+Gout,Uric Acid,3 months,<6.0 mg/dL,ACR,Evidence-based
+Gout,Kidney Function,6 months,Normal range,ACR,Adjust if clinical concern
+Osteoporosis,DEXA Scan,24 months,T-score >-2.5,NOF,More frequent if uncontrolled
+Osteoporosis,Calcium Level,6 months,8.5-10.5 mg/dL,NOF,Standard protocol
+Osteoporosis,Vitamin D,6 months,>30 ng/mL,NOF,Adjust if clinical concern
+Depression,PHQ-9 Score,1 month,<5 (remission),APA,As per physician discretion
+Depression,Liver Function (if on medications),6 months,Normal,APA,Evidence-based
+Obesity,BMI,3 months,<25 kg/m²,WHO,Standard protocol
+Obesity,Waist Circumference,3 months,"<90cm (M), <80cm (F)",WHO,More frequent if uncontrolled
+Obesity,Fasting Glucose,6 months,<100 mg/dL,WHO,Standard protocol
+Chronic Pancreatitis,Fasting Glucose,3 months,70-130 mg/dL,AGA,Adjust if clinical concern

@@ -1,0 +1,3155 @@
+[
+  {
+    "patient_id": "P001",
+    "name": "Rahul Sharma",
+    "age": 62,
+    "gender": "Female",
+    "blood_group": "B-",
+    "phone": "+91-7958682846",
+    "city": "Chennai",
+    "diagnosis": [
+      "Type 2 Diabetes",
+      "Hypertension"
+    ],
+    "allergies": [],
+    "smoking": "Current",
+    "alcohol": "None",
+    "bmi": 34.1,
+    "email": "shreyashgautam2007@gmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P002",
+    "name": "Priya Bose",
+    "age": 79,
+    "gender": "Male",
+    "blood_group": "A+",
+    "phone": "+91-7402418010",
+    "city": "Bangalore",
+    "diagnosis": [
+      "Hypertension",
+      "Hypothyroidism"
+    ],
+    "allergies": [
+      "Erythromycin",
+      "Sulfa drugs"
+    ],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 32.2,
+    "email": "dipsitarout@gmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P003",
+    "name": "Anil Tiwari",
+    "age": 57,
+    "gender": "Female",
+    "blood_group": "B-",
+    "phone": "+91-8929338154",
+    "city": "Lucknow",
+    "diagnosis": [
+      "Coronary Artery Disease",
+      "Type 2 Diabetes"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 36.1,
+    "email": "anil.tiwari655@gmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P004",
+    "name": "Sunita Gupta",
+    "age": 32,
+    "gender": "Male",
+    "blood_group": "B-",
+    "phone": "+91-8445662585",
+    "city": "Delhi",
+    "diagnosis": [
+      "Asthma",
+      "Allergic Rhinitis"
+    ],
+    "allergies": [
+      "Contrast dye",
+      "NSAIDs"
+    ],
+    "smoking": "Never",
+    "alcohol": "Occasional",
+    "bmi": 19.9,
+    "email": "sunita.gupta26@hotmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P005",
+    "name": "Vikram Gupta",
+    "age": 76,
+    "gender": "Male",
+    "blood_group": "AB-",
+    "phone": "+91-9303082117",
+    "city": "Delhi",
+    "diagnosis": [
+      "Chronic Kidney Disease",
+      "Hypertension",
+      "Type 2 Diabetes"
+    ],
+    "allergies": [
+      "Erythromycin"
+    ],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 31.0,
+    "email": "vikram.gupta251@yahoo.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P006",
+    "name": "Meena Dubey",
+    "age": 75,
+    "gender": "Male",
+    "blood_group": "A-",
+    "phone": "+91-7196814233",
+    "city": "Bangalore",
+    "diagnosis": [
+      "Rheumatoid Arthritis",
+      "Osteoporosis"
+    ],
+    "allergies": [
+      "Contrast dye",
+      "Erythromycin"
+    ],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 38.5,
+    "email": "meena.dubey143@gmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P007",
+    "name": "Deepak Shah",
+    "age": 77,
+    "gender": "Female",
+    "blood_group": "AB-",
+    "phone": "+91-9730243887",
+    "city": "Pune",
+    "diagnosis": [
+      "COPD",
+      "Type 2 Diabetes",
+      "Atrial Fibrillation"
+    ],
+    "allergies": [],
+    "smoking": "Never",
+    "alcohol": "Occasional",
+    "bmi": 26.2,
+    "email": "deepak.shah693@rediffmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P008",
+    "name": "Kavita Kumar",
+    "age": 64,
+    "gender": "Male",
+    "blood_group": "B-",
+    "phone": "+91-7701808367",
+    "city": "Ahmedabad",
+    "diagnosis": [
+      "Polycystic Ovary Syndrome",
+      "Insulin Resistance"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "Occasional",
+    "bmi": 41.7,
+    "email": "kavita.kumar90@rediffmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P009",
+    "name": "Suresh Rao",
+    "age": 62,
+    "gender": "Male",
+    "blood_group": "B-",
+    "phone": "+91-7137869475",
+    "city": "Pune",
+    "diagnosis": [
+      "Hypertension"
+    ],
+    "allergies": [
+      "Codeine",
+      "Ibuprofen"
+    ],
+    "smoking": "Former",
+    "alcohol": "Occasional",
+    "bmi": 19.1,
+    "email": "suresh.rao433@gmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P010",
+    "name": "Anita Verma",
+    "age": 80,
+    "gender": "Female",
+    "blood_group": "AB+",
+    "phone": "+91-9761027762",
+    "city": "Ahmedabad",
+    "diagnosis": [
+      "Type 2 Diabetes",
+      "Dyslipidemia"
+    ],
+    "allergies": [
+      "Contrast dye"
+    ],
+    "smoking": "Never",
+    "alcohol": "Occasional",
+    "bmi": 20.9,
+    "email": "anita.verma31@gmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P011",
+    "name": "Ravi Dubey",
+    "age": 69,
+    "gender": "Female",
+    "blood_group": "AB+",
+    "phone": "+91-8554762903",
+    "city": "Bangalore",
+    "diagnosis": [
+      "Heart Failure",
+      "Hypertension"
+    ],
+    "allergies": [
+      "Codeine",
+      "Latex"
+    ],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 29.6,
+    "email": "ravi.dubey224@yahoo.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P012",
+    "name": "Pooja Patel",
+    "age": 70,
+    "gender": "Male",
+    "blood_group": "B+",
+    "phone": "+91-9922644564",
+    "city": "Kolkata",
+    "diagnosis": [
+      "Chronic Kidney Disease",
+      "Anemia"
+    ],
+    "allergies": [],
+    "smoking": "Current",
+    "alcohol": "None",
+    "bmi": 26.9,
+    "email": "pooja.patel518@rediffmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P013",
+    "name": "Manish Gupta",
+    "age": 60,
+    "gender": "Male",
+    "blood_group": "A-",
+    "phone": "+91-9927923735",
+    "city": "Jaipur",
+    "diagnosis": [
+      "Depression",
+      "Anxiety"
+    ],
+    "allergies": [
+      "Codeine"
+    ],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 25.8,
+    "email": "manish.gupta28@rediffmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P014",
+    "name": "Rekha Chaudhary",
+    "age": 40,
+    "gender": "Male",
+    "blood_group": "O+",
+    "phone": "+91-9150000991",
+    "city": "Chennai",
+    "diagnosis": [
+      "Obesity",
+      "Metabolic Syndrome",
+      "Type 2 Diabetes"
+    ],
+    "allergies": [
+      "Aspirin"
+    ],
+    "smoking": "Current",
+    "alcohol": "None",
+    "bmi": 38.8,
+    "email": "rekha.chaudhary204@rediffmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P015",
+    "name": "Ajay Verma",
+    "age": 41,
+    "gender": "Male",
+    "blood_group": "O-",
+    "phone": "+91-7693847829",
+    "city": "Jaipur",
+    "diagnosis": [
+      "Gout",
+      "Hypertension"
+    ],
+    "allergies": [
+      "Codeine",
+      "Erythromycin"
+    ],
+    "smoking": "Current",
+    "alcohol": "None",
+    "bmi": 32.2,
+    "email": "ajay.verma430@yahoo.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P016",
+    "name": "Neha Patel",
+    "age": 53,
+    "gender": "Female",
+    "blood_group": "O+",
+    "phone": "+91-8028439863",
+    "city": "Mumbai",
+    "diagnosis": [
+      "Epilepsy"
+    ],
+    "allergies": [],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 40.7,
+    "email": "neha.patel460@rediffmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P017",
+    "name": "Sanjay Tiwari",
+    "age": 27,
+    "gender": "Male",
+    "blood_group": "B+",
+    "phone": "+91-9833608204",
+    "city": "Ahmedabad",
+    "diagnosis": [
+      "Parkinson's Disease"
+    ],
+    "allergies": [
+      "Sulfa drugs",
+      "Warfarin"
+    ],
+    "smoking": "Current",
+    "alcohol": "None",
+    "bmi": 24.0,
+    "email": "sanjay.tiwari285@gmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P018",
+    "name": "Divya Tiwari",
+    "age": 77,
+    "gender": "Male",
+    "blood_group": "O+",
+    "phone": "+91-8713658874",
+    "city": "Pune",
+    "diagnosis": [
+      "Stroke",
+      "Hypertension",
+      "Atrial Fibrillation"
+    ],
+    "allergies": [
+      "Ibuprofen",
+      "NSAIDs"
+    ],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 28.6,
+    "email": "divya.tiwari778@yahoo.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P019",
+    "name": "Amit Kumar",
+    "age": 37,
+    "gender": "Female",
+    "blood_group": "A+",
+    "phone": "+91-9526766690",
+    "city": "Jaipur",
+    "diagnosis": [
+      "Liver Cirrhosis",
+      "Type 2 Diabetes"
+    ],
+    "allergies": [],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 22.9,
+    "email": "amit.kumar715@outlook.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P020",
+    "name": "Shweta Nair",
+    "age": 26,
+    "gender": "Male",
+    "blood_group": "A+",
+    "phone": "+91-8419179580",
+    "city": "Delhi",
+    "diagnosis": [
+      "HIV/AIDS"
+    ],
+    "allergies": [
+      "Penicillin"
+    ],
+    "smoking": "Current",
+    "alcohol": "None",
+    "bmi": 24.3,
+    "email": "shweta.nair349@hotmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P021",
+    "name": "Rajesh Tiwari",
+    "age": 53,
+    "gender": "Male",
+    "blood_group": "AB-",
+    "phone": "+91-8043665192",
+    "city": "Ahmedabad",
+    "diagnosis": [
+      "Tuberculosis"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 19.8,
+    "email": "rajesh.tiwari160@yahoo.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P022",
+    "name": "Swati Bose",
+    "age": 64,
+    "gender": "Female",
+    "blood_group": "AB-",
+    "phone": "+91-7232663462",
+    "city": "Delhi",
+    "diagnosis": [
+      "Psoriasis",
+      "Hypertension"
+    ],
+    "allergies": [
+      "Contrast dye"
+    ],
+    "smoking": "Never",
+    "alcohol": "Occasional",
+    "bmi": 35.3,
+    "email": "swati.bose981@hotmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P023",
+    "name": "Harish Nair",
+    "age": 73,
+    "gender": "Male",
+    "blood_group": "B-",
+    "phone": "+91-9303329764",
+    "city": "Ahmedabad",
+    "diagnosis": [
+      "Migraine"
+    ],
+    "allergies": [],
+    "smoking": "Never",
+    "alcohol": "Occasional",
+    "bmi": 22.0,
+    "email": "harish.nair105@gmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P024",
+    "name": "Usha Kumar",
+    "age": 51,
+    "gender": "Female",
+    "blood_group": "A-",
+    "phone": "+91-7217275224",
+    "city": "Jaipur",
+    "diagnosis": [
+      "Peptic Ulcer Disease",
+      "GERD"
+    ],
+    "allergies": [],
+    "smoking": "Never",
+    "alcohol": "None",
+    "bmi": 40.2,
+    "email": "usha.kumar390@gmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P025",
+    "name": "Nitin Iyer",
+    "age": 76,
+    "gender": "Female",
+    "blood_group": "AB-",
+    "phone": "+91-9067418686",
+    "city": "Bangalore",
+    "diagnosis": [
+      "Anemia",
+      "Hypothyroidism"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 21.5,
+    "email": "nitin.iyer368@hotmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P026",
+    "name": "Shruti Chaudhary",
+    "age": 22,
+    "gender": "Female",
+    "blood_group": "AB+",
+    "phone": "+91-9991837720",
+    "city": "Jaipur",
+    "diagnosis": [
+      "Chronic Pancreatitis",
+      "Type 2 Diabetes"
+    ],
+    "allergies": [
+      "Latex"
+    ],
+    "smoking": "Current",
+    "alcohol": "Regular",
+    "bmi": 29.4,
+    "email": "shruti.chaudhary619@hotmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P027",
+    "name": "Pankaj Mehta",
+    "age": 34,
+    "gender": "Male",
+    "blood_group": "O-",
+    "phone": "+91-7245522987",
+    "city": "Mumbai",
+    "diagnosis": [
+      "Glaucoma",
+      "Hypertension"
+    ],
+    "allergies": [
+      "Ibuprofen"
+    ],
+    "smoking": "Current",
+    "alcohol": "Occasional",
+    "bmi": 29.8,
+    "email": "pankaj.mehta827@gmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P028",
+    "name": "Geeta Mishra",
+    "age": 76,
+    "gender": "Male",
+    "blood_group": "B+",
+    "phone": "+91-7294296873",
+    "city": "Lucknow",
+    "diagnosis": [
+      "Benign Prostatic Hyperplasia"
+    ],
+    "allergies": [
+      "Penicillin",
+      "Aspirin"
+    ],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 38.6,
+    "email": "geeta.mishra748@outlook.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P029",
+    "name": "Manoj Dubey",
+    "age": 47,
+    "gender": "Male",
+    "blood_group": "A+",
+    "phone": "+91-9660223333",
+    "city": "Delhi",
+    "diagnosis": [
+      "Breast Cancer"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 31.8,
+    "email": "manoj.dubey550@gmail.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P030",
+    "name": "Archana Verma",
+    "age": 55,
+    "gender": "Female",
+    "blood_group": "B-",
+    "phone": "+91-8140805649",
+    "city": "Kolkata",
+    "diagnosis": [
+      "Colorectal Cancer"
+    ],
+    "allergies": [
+      "Latex"
+    ],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 33.3,
+    "email": "archana.verma997@outlook.com",
+    "password": "shreyash#123"
+  },
+  {
+    "patient_id": "P031",
+    "name": "Aruna Shukla",
+    "age": 55,
+    "gender": "Female",
+    "blood_group": "B-",
+    "phone": "+91-9174684276",
+    "city": "Delhi",
+    "email": "aruna.shukla465@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Depression",
+      "Peripheral Artery Disease",
+      "Epilepsy"
+    ],
+    "allergies": [],
+    "smoking": "Never",
+    "alcohol": "None",
+    "bmi": 27.3
+  },
+  {
+    "patient_id": "P032",
+    "name": "Chitra Bhatia",
+    "age": 69,
+    "gender": "Female",
+    "blood_group": "A-",
+    "phone": "+91-7305718272",
+    "city": "Kolkata",
+    "email": "chitra.bhatia78@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Chronic Pancreatitis",
+      "Rheumatoid Arthritis",
+      "Iron Deficiency Anemia"
+    ],
+    "allergies": [
+      "Codeine"
+    ],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 40.6
+  },
+  {
+    "patient_id": "P033",
+    "name": "Parul Pandey",
+    "age": 55,
+    "gender": "Male",
+    "blood_group": "B-",
+    "phone": "+91-8813962536",
+    "city": "Nagpur",
+    "email": "parul.pandey441@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Multiple Sclerosis",
+      "Atrial Fibrillation",
+      "Prostate Cancer"
+    ],
+    "allergies": [
+      "Contrast dye",
+      "Latex"
+    ],
+    "smoking": "Never",
+    "alcohol": "Occasional",
+    "bmi": 24.7
+  },
+  {
+    "patient_id": "P034",
+    "name": "Shefali Khatri",
+    "age": 57,
+    "gender": "Female",
+    "blood_group": "B-",
+    "phone": "+91-7874473159",
+    "city": "Kolkata",
+    "email": "shefali.khatri742@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Hyperthyroidism",
+      "Multiple Sclerosis"
+    ],
+    "allergies": [
+      "Sulfa drugs"
+    ],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 30.1
+  },
+  {
+    "patient_id": "P035",
+    "name": "Lata Chaudhary",
+    "age": 73,
+    "gender": "Male",
+    "blood_group": "A-",
+    "phone": "+91-8278632824",
+    "city": "Lucknow",
+    "email": "lata.chaudhary150@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Coronary Artery Disease"
+    ],
+    "allergies": [
+      "Cephalosporins",
+      "Penicillin"
+    ],
+    "smoking": "Former",
+    "alcohol": "Occasional",
+    "bmi": 27.1
+  },
+  {
+    "patient_id": "P036",
+    "name": "Archana Chakraborty",
+    "age": 59,
+    "gender": "Male",
+    "blood_group": "A-",
+    "phone": "+91-7395296179",
+    "city": "Kochi",
+    "email": "archana.chakraborty620@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Colorectal Cancer",
+      "Polycystic Ovary Syndrome",
+      "Crohn's Disease"
+    ],
+    "allergies": [
+      "Contrast dye",
+      "Warfarin"
+    ],
+    "smoking": "Current",
+    "alcohol": "Occasional",
+    "bmi": 29.3
+  },
+  {
+    "patient_id": "P037",
+    "name": "Gaurav Kaul",
+    "age": 55,
+    "gender": "Female",
+    "blood_group": "A-",
+    "phone": "+91-7634063428",
+    "city": "Indore",
+    "email": "gaurav.kaul826@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Rheumatoid Arthritis"
+    ],
+    "allergies": [
+      "Latex",
+      "Amoxicillin",
+      "Sulfa drugs"
+    ],
+    "smoking": "Current",
+    "alcohol": "Regular",
+    "bmi": 39.5
+  },
+  {
+    "patient_id": "P038",
+    "name": "Kamal Joshi",
+    "age": 35,
+    "gender": "Male",
+    "blood_group": "A-",
+    "phone": "+91-8946237594",
+    "city": "Chennai",
+    "email": "kamal.joshi633@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Peripheral Artery Disease",
+      "HIV/AIDS",
+      "Multiple Sclerosis"
+    ],
+    "allergies": [],
+    "smoking": "Current",
+    "alcohol": "Occasional",
+    "bmi": 40.7
+  },
+  {
+    "patient_id": "P039",
+    "name": "Vaibhav Wadhwa",
+    "age": 41,
+    "gender": "Male",
+    "blood_group": "O+",
+    "phone": "+91-9159499094",
+    "city": "Chennai",
+    "email": "vaibhav.wadhwa964@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Osteoporosis",
+      "Parkinson's Disease",
+      "Dyslipidemia"
+    ],
+    "allergies": [
+      "Erythromycin"
+    ],
+    "smoking": "Current",
+    "alcohol": "None",
+    "bmi": 26.3
+  },
+  {
+    "patient_id": "P040",
+    "name": "Kalpana Arora",
+    "age": 74,
+    "gender": "Female",
+    "blood_group": "O+",
+    "phone": "+91-7543412542",
+    "city": "Kolkata",
+    "email": "kalpana.arora532@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Benign Prostatic Hyperplasia",
+      "Peripheral Artery Disease"
+    ],
+    "allergies": [
+      "Tetracycline",
+      "Metformin",
+      "Amoxicillin"
+    ],
+    "smoking": "Current",
+    "alcohol": "None",
+    "bmi": 36.1
+  },
+  {
+    "patient_id": "P041",
+    "name": "Suhas Iyer",
+    "age": 37,
+    "gender": "Male",
+    "blood_group": "AB-",
+    "phone": "+91-9574422684",
+    "city": "Chennai",
+    "email": "suhas.iyer426@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Anemia",
+      "Crohn's Disease",
+      "Colorectal Cancer"
+    ],
+    "allergies": [
+      "Aspirin",
+      "Latex",
+      "NSAIDs"
+    ],
+    "smoking": "Never",
+    "alcohol": "Occasional",
+    "bmi": 20.6
+  },
+  {
+    "patient_id": "P042",
+    "name": "Ankita Chopra",
+    "age": 73,
+    "gender": "Male",
+    "blood_group": "A-",
+    "phone": "+91-8749794986",
+    "city": "Kochi",
+    "email": "ankita.chopra462@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Peptic Ulcer Disease",
+      "Peripheral Artery Disease",
+      "Stroke"
+    ],
+    "allergies": [],
+    "smoking": "Current",
+    "alcohol": "Occasional",
+    "bmi": 38.2
+  },
+  {
+    "patient_id": "P043",
+    "name": "Vinod Srivastava",
+    "age": 46,
+    "gender": "Female",
+    "blood_group": "AB-",
+    "phone": "+91-8597210335",
+    "city": "Visakhapatnam",
+    "email": "vinod.srivastava943@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Benign Prostatic Hyperplasia",
+      "Osteoporosis",
+      "Metabolic Syndrome"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 25.0
+  },
+  {
+    "patient_id": "P044",
+    "name": "Geeta Srivastava",
+    "age": 52,
+    "gender": "Female",
+    "blood_group": "O+",
+    "phone": "+91-8181084980",
+    "city": "Bangalore",
+    "email": "geeta.srivastava3@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Benign Prostatic Hyperplasia",
+      "Multiple Sclerosis"
+    ],
+    "allergies": [
+      "Amoxicillin",
+      "Erythromycin"
+    ],
+    "smoking": "Former",
+    "alcohol": "Occasional",
+    "bmi": 25.8
+  },
+  {
+    "patient_id": "P045",
+    "name": "Jay Deshpande",
+    "age": 19,
+    "gender": "Male",
+    "blood_group": "A+",
+    "phone": "+91-7633019326",
+    "city": "Kanpur",
+    "email": "jay.deshpande276@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Tuberculosis",
+      "Ulcerative Colitis",
+      "Gout"
+    ],
+    "allergies": [
+      "Erythromycin"
+    ],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 38.1
+  },
+  {
+    "patient_id": "P046",
+    "name": "Ravi Deshpande",
+    "age": 63,
+    "gender": "Male",
+    "blood_group": "O-",
+    "phone": "+91-8597514616",
+    "city": "Jaipur",
+    "email": "ravi.deshpande714@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "COPD"
+    ],
+    "allergies": [
+      "Cephalosporins"
+    ],
+    "smoking": "Current",
+    "alcohol": "Occasional",
+    "bmi": 39.3
+  },
+  {
+    "patient_id": "P047",
+    "name": "Tanvi Bhatia",
+    "age": 46,
+    "gender": "Female",
+    "blood_group": "AB-",
+    "phone": "+91-7289086333",
+    "city": "Ahmedabad",
+    "email": "tanvi.bhatia971@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Stroke",
+      "Multiple Sclerosis",
+      "IBS"
+    ],
+    "allergies": [
+      "Metformin",
+      "Warfarin"
+    ],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 35.9
+  },
+  {
+    "patient_id": "P048",
+    "name": "Dev Patel",
+    "age": 37,
+    "gender": "Male",
+    "blood_group": "A-",
+    "phone": "+91-7704177085",
+    "city": "Chennai",
+    "email": "dev.patel39@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "HIV/AIDS",
+      "Metabolic Syndrome"
+    ],
+    "allergies": [
+      "Codeine",
+      "Contrast dye",
+      "Morphine"
+    ],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 33.4
+  },
+  {
+    "patient_id": "P049",
+    "name": "Geeta Mahajan",
+    "age": 41,
+    "gender": "Male",
+    "blood_group": "O-",
+    "phone": "+91-8777566277",
+    "city": "Pune",
+    "email": "geeta.mahajan793@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Cervical Cancer",
+      "Chronic Kidney Disease"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "Occasional",
+    "bmi": 22.7
+  },
+  {
+    "patient_id": "P050",
+    "name": "Deepa Pandey",
+    "age": 70,
+    "gender": "Male",
+    "blood_group": "A+",
+    "phone": "+91-7950170825",
+    "city": "Kochi",
+    "email": "deepa.pandey373@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Cervical Cancer",
+      "Parkinson's Disease",
+      "Benign Prostatic Hyperplasia"
+    ],
+    "allergies": [
+      "Morphine"
+    ],
+    "smoking": "Current",
+    "alcohol": "Occasional",
+    "bmi": 42.7
+  },
+  {
+    "patient_id": "P051",
+    "name": "Anu Jain",
+    "age": 45,
+    "gender": "Female",
+    "blood_group": "A-",
+    "phone": "+91-7677409188",
+    "city": "Indore",
+    "email": "anu.jain90@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Asthma",
+      "Multiple Sclerosis",
+      "Sarcoidosis"
+    ],
+    "allergies": [
+      "Penicillin"
+    ],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 26.0
+  },
+  {
+    "patient_id": "P052",
+    "name": "Namrata Dube",
+    "age": 43,
+    "gender": "Female",
+    "blood_group": "A-",
+    "phone": "+91-9180960086",
+    "city": "Mumbai",
+    "email": "namrata.dube916@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Cervical Cancer",
+      "Hypertension",
+      "Colorectal Cancer"
+    ],
+    "allergies": [
+      "Cephalosporins",
+      "Warfarin",
+      "Sulfa drugs"
+    ],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 24.0
+  },
+  {
+    "patient_id": "P053",
+    "name": "Kavita Pant",
+    "age": 79,
+    "gender": "Male",
+    "blood_group": "AB-",
+    "phone": "+91-9695831533",
+    "city": "Patna",
+    "email": "kavita.pant885@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Parkinson's Disease",
+      "Breast Cancer"
+    ],
+    "allergies": [
+      "Cephalosporins",
+      "Amoxicillin"
+    ],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 20.7
+  },
+  {
+    "patient_id": "P054",
+    "name": "Raj Talwar",
+    "age": 30,
+    "gender": "Female",
+    "blood_group": "AB-",
+    "phone": "+91-9378851582",
+    "city": "Pune",
+    "email": "raj.talwar430@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Gout",
+      "Anxiety",
+      "Migraine"
+    ],
+    "allergies": [
+      "Warfarin",
+      "Erythromycin",
+      "Tetracycline"
+    ],
+    "smoking": "Never",
+    "alcohol": "Occasional",
+    "bmi": 28.4
+  },
+  {
+    "patient_id": "P055",
+    "name": "Rekha Gupta",
+    "age": 26,
+    "gender": "Male",
+    "blood_group": "B+",
+    "phone": "+91-8218494225",
+    "city": "Bhopal",
+    "email": "rekha.gupta23@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Chronic Pancreatitis",
+      "Migraine",
+      "IBS"
+    ],
+    "allergies": [
+      "Sulfa drugs",
+      "Erythromycin",
+      "Penicillin"
+    ],
+    "smoking": "Never",
+    "alcohol": "None",
+    "bmi": 43.2
+  },
+  {
+    "patient_id": "P056",
+    "name": "Swati Banerjee",
+    "age": 27,
+    "gender": "Female",
+    "blood_group": "A-",
+    "phone": "+91-7657793068",
+    "city": "Chennai",
+    "email": "swati.banerjee673@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Ulcerative Colitis"
+    ],
+    "allergies": [
+      "Latex"
+    ],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 22.2
+  },
+  {
+    "patient_id": "P057",
+    "name": "Kabir Mahajan",
+    "age": 36,
+    "gender": "Male",
+    "blood_group": "AB-",
+    "phone": "+91-8541578219",
+    "city": "Lucknow",
+    "email": "kabir.mahajan27@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Multiple Sclerosis",
+      "Cervical Cancer"
+    ],
+    "allergies": [
+      "Ibuprofen",
+      "Cephalosporins"
+    ],
+    "smoking": "Never",
+    "alcohol": "None",
+    "bmi": 20.6
+  },
+  {
+    "patient_id": "P058",
+    "name": "Sushil Luthra",
+    "age": 40,
+    "gender": "Male",
+    "blood_group": "AB-",
+    "phone": "+91-7935146073",
+    "city": "Kolkata",
+    "email": "sushil.luthra349@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Chronic Pancreatitis"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 21.2
+  },
+  {
+    "patient_id": "P059",
+    "name": "Jyoti Prasad",
+    "age": 83,
+    "gender": "Female",
+    "blood_group": "O-",
+    "phone": "+91-8481508232",
+    "city": "Ahmedabad",
+    "email": "jyoti.prasad243@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Iron Deficiency Anemia"
+    ],
+    "allergies": [],
+    "smoking": "Current",
+    "alcohol": "Occasional",
+    "bmi": 39.9
+  },
+  {
+    "patient_id": "P060",
+    "name": "Uday Joshi",
+    "age": 18,
+    "gender": "Female",
+    "blood_group": "O-",
+    "phone": "+91-7709073484",
+    "city": "Coimbatore",
+    "email": "uday.joshi548@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Obesity",
+      "Sarcoidosis"
+    ],
+    "allergies": [
+      "Contrast dye",
+      "Penicillin"
+    ],
+    "smoking": "Current",
+    "alcohol": "Regular",
+    "bmi": 19.4
+  },
+  {
+    "patient_id": "P061",
+    "name": "Anita Das",
+    "age": 24,
+    "gender": "Male",
+    "blood_group": "B+",
+    "phone": "+91-7620830707",
+    "city": "Vadodara",
+    "email": "anita.das430@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Asthma"
+    ],
+    "allergies": [
+      "Amoxicillin"
+    ],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 32.7
+  },
+  {
+    "patient_id": "P062",
+    "name": "Shweta Lal",
+    "age": 36,
+    "gender": "Female",
+    "blood_group": "AB-",
+    "phone": "+91-9220597977",
+    "city": "Patna",
+    "email": "shweta.lal862@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Rheumatoid Arthritis"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 27.8
+  },
+  {
+    "patient_id": "P063",
+    "name": "Yogesh Bhatia",
+    "age": 78,
+    "gender": "Male",
+    "blood_group": "AB+",
+    "phone": "+91-7171132564",
+    "city": "Lucknow",
+    "email": "yogesh.bhatia205@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Type 2 Diabetes",
+      "Alzheimer's Disease",
+      "Hypothyroidism"
+    ],
+    "allergies": [],
+    "smoking": "Current",
+    "alcohol": "None",
+    "bmi": 32.9
+  },
+  {
+    "patient_id": "P064",
+    "name": "Sachin Shastri",
+    "age": 58,
+    "gender": "Male",
+    "blood_group": "O+",
+    "phone": "+91-8369793513",
+    "city": "Kochi",
+    "email": "sachin.shastri884@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Glaucoma",
+      "Lupus",
+      "Alzheimer's Disease"
+    ],
+    "allergies": [
+      "Metformin"
+    ],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 36.0
+  },
+  {
+    "patient_id": "P065",
+    "name": "Zara Jha",
+    "age": 54,
+    "gender": "Male",
+    "blood_group": "O+",
+    "phone": "+91-7538649410",
+    "city": "Hyderabad",
+    "email": "zara.jha701@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Epilepsy"
+    ],
+    "allergies": [
+      "Sulfa drugs",
+      "Warfarin"
+    ],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 27.0
+  },
+  {
+    "patient_id": "P066",
+    "name": "Dhruv Luthra",
+    "age": 80,
+    "gender": "Female",
+    "blood_group": "AB+",
+    "phone": "+91-9748017800",
+    "city": "Hyderabad",
+    "email": "dhruv.luthra488@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Lupus",
+      "Hypothyroidism"
+    ],
+    "allergies": [
+      "Latex",
+      "Sulfa drugs"
+    ],
+    "smoking": "Former",
+    "alcohol": "Occasional",
+    "bmi": 40.9
+  },
+  {
+    "patient_id": "P067",
+    "name": "Anu Mishra",
+    "age": 73,
+    "gender": "Male",
+    "blood_group": "B-",
+    "phone": "+91-7703422986",
+    "city": "Ahmedabad",
+    "email": "anu.mishra874@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Gout",
+      "Obesity"
+    ],
+    "allergies": [
+      "Cephalosporins",
+      "Penicillin"
+    ],
+    "smoking": "Current",
+    "alcohol": "Occasional",
+    "bmi": 41.2
+  },
+  {
+    "patient_id": "P068",
+    "name": "Dhruv Sharma",
+    "age": 41,
+    "gender": "Male",
+    "blood_group": "AB+",
+    "phone": "+91-7363374581",
+    "city": "Visakhapatnam",
+    "email": "dhruv.sharma24@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "COPD",
+      "HIV/AIDS"
+    ],
+    "allergies": [
+      "Contrast dye",
+      "Warfarin"
+    ],
+    "smoking": "Never",
+    "alcohol": "Occasional",
+    "bmi": 40.3
+  },
+  {
+    "patient_id": "P069",
+    "name": "Ashish Bhatia",
+    "age": 22,
+    "gender": "Female",
+    "blood_group": "AB-",
+    "phone": "+91-9169823516",
+    "city": "Hyderabad",
+    "email": "ashish.bhatia68@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Chronic Pancreatitis"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 33.9
+  },
+  {
+    "patient_id": "P070",
+    "name": "Shweta Kapoor",
+    "age": 84,
+    "gender": "Female",
+    "blood_group": "O-",
+    "phone": "+91-8950312143",
+    "city": "Bangalore",
+    "email": "shweta.kapoor592@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Heart Failure",
+      "Iron Deficiency Anemia"
+    ],
+    "allergies": [
+      "Sulfa drugs",
+      "NSAIDs",
+      "Tetracycline"
+    ],
+    "smoking": "Current",
+    "alcohol": "None",
+    "bmi": 27.1
+  },
+  {
+    "patient_id": "P071",
+    "name": "Kamal Bhatt",
+    "age": 46,
+    "gender": "Male",
+    "blood_group": "B+",
+    "phone": "+91-9279365626",
+    "city": "Delhi",
+    "email": "kamal.bhatt957@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Benign Prostatic Hyperplasia",
+      "Hypothyroidism"
+    ],
+    "allergies": [
+      "Erythromycin",
+      "Latex"
+    ],
+    "smoking": "Current",
+    "alcohol": "None",
+    "bmi": 33.9
+  },
+  {
+    "patient_id": "P072",
+    "name": "Milan Tripathi",
+    "age": 76,
+    "gender": "Male",
+    "blood_group": "AB+",
+    "phone": "+91-7746552918",
+    "city": "Visakhapatnam",
+    "email": "milan.tripathi408@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Dyslipidemia",
+      "Type 2 Diabetes",
+      "Hyperthyroidism"
+    ],
+    "allergies": [],
+    "smoking": "Current",
+    "alcohol": "Regular",
+    "bmi": 41.8
+  },
+  {
+    "patient_id": "P073",
+    "name": "Sneha Shastri",
+    "age": 48,
+    "gender": "Male",
+    "blood_group": "B-",
+    "phone": "+91-7908798730",
+    "city": "Bangalore",
+    "email": "sneha.shastri785@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Iron Deficiency Anemia"
+    ],
+    "allergies": [],
+    "smoking": "Never",
+    "alcohol": "Occasional",
+    "bmi": 41.4
+  },
+  {
+    "patient_id": "P074",
+    "name": "Suresh Mukherjee",
+    "age": 83,
+    "gender": "Male",
+    "blood_group": "A-",
+    "phone": "+91-9980214137",
+    "city": "Delhi",
+    "email": "suresh.mukherjee617@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Coronary Artery Disease"
+    ],
+    "allergies": [
+      "Ibuprofen"
+    ],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 42.9
+  },
+  {
+    "patient_id": "P075",
+    "name": "Amruta Garg",
+    "age": 43,
+    "gender": "Female",
+    "blood_group": "AB+",
+    "phone": "+91-7552147658",
+    "city": "Patna",
+    "email": "amruta.garg760@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Insulin Resistance",
+      "Sarcoidosis",
+      "Crohn's Disease"
+    ],
+    "allergies": [
+      "Erythromycin"
+    ],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 36.6
+  },
+  {
+    "patient_id": "P076",
+    "name": "Vijaya Jha",
+    "age": 19,
+    "gender": "Female",
+    "blood_group": "AB+",
+    "phone": "+91-8336584331",
+    "city": "Lucknow",
+    "email": "vijaya.jha41@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Migraine",
+      "Polycystic Ovary Syndrome",
+      "Hyperthyroidism"
+    ],
+    "allergies": [
+      "Sulfa drugs"
+    ],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 23.4
+  },
+  {
+    "patient_id": "P077",
+    "name": "Dev Srivastava",
+    "age": 72,
+    "gender": "Female",
+    "blood_group": "B+",
+    "phone": "+91-7446875956",
+    "city": "Hyderabad",
+    "email": "dev.srivastava424@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Peripheral Artery Disease"
+    ],
+    "allergies": [
+      "Erythromycin",
+      "Metformin",
+      "NSAIDs"
+    ],
+    "smoking": "Former",
+    "alcohol": "Occasional",
+    "bmi": 35.7
+  },
+  {
+    "patient_id": "P078",
+    "name": "Kishore Rastogi",
+    "age": 32,
+    "gender": "Female",
+    "blood_group": "O-",
+    "phone": "+91-7685276505",
+    "city": "Hyderabad",
+    "email": "kishore.rastogi793@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Osteoporosis",
+      "Cervical Cancer"
+    ],
+    "allergies": [
+      "Erythromycin"
+    ],
+    "smoking": "Current",
+    "alcohol": "None",
+    "bmi": 43.7
+  },
+  {
+    "patient_id": "P079",
+    "name": "Jay Pandey",
+    "age": 58,
+    "gender": "Male",
+    "blood_group": "O+",
+    "phone": "+91-7206920983",
+    "city": "Hyderabad",
+    "email": "jay.pandey331@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Hyperthyroidism",
+      "Cervical Cancer",
+      "Breast Cancer"
+    ],
+    "allergies": [
+      "Tetracycline",
+      "Cephalosporins",
+      "Morphine"
+    ],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 21.3
+  },
+  {
+    "patient_id": "P080",
+    "name": "Pankaj Verma",
+    "age": 31,
+    "gender": "Female",
+    "blood_group": "O+",
+    "phone": "+91-7708964125",
+    "city": "Kanpur",
+    "email": "pankaj.verma619@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Cervical Cancer",
+      "Asthma"
+    ],
+    "allergies": [
+      "Ibuprofen",
+      "Penicillin",
+      "Latex"
+    ],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 28.1
+  },
+  {
+    "patient_id": "P081",
+    "name": "Shailesh Mukherjee",
+    "age": 51,
+    "gender": "Male",
+    "blood_group": "A-",
+    "phone": "+91-8563291294",
+    "city": "Kolkata",
+    "email": "shailesh.mukherjee51@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Peptic Ulcer Disease"
+    ],
+    "allergies": [
+      "Latex",
+      "Erythromycin",
+      "Penicillin"
+    ],
+    "smoking": "Former",
+    "alcohol": "Occasional",
+    "bmi": 27.0
+  },
+  {
+    "patient_id": "P082",
+    "name": "Sudhir Mukherjee",
+    "age": 77,
+    "gender": "Female",
+    "blood_group": "O+",
+    "phone": "+91-8551514516",
+    "city": "Indore",
+    "email": "sudhir.mukherjee630@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Hypertension",
+      "Polycystic Ovary Syndrome"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 37.4
+  },
+  {
+    "patient_id": "P083",
+    "name": "Kavita Bajaj",
+    "age": 35,
+    "gender": "Male",
+    "blood_group": "AB-",
+    "phone": "+91-8710202137",
+    "city": "Coimbatore",
+    "email": "kavita.bajaj509@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Obesity"
+    ],
+    "allergies": [
+      "Morphine"
+    ],
+    "smoking": "Current",
+    "alcohol": "Regular",
+    "bmi": 34.3
+  },
+  {
+    "patient_id": "P084",
+    "name": "Subhash Bajaj",
+    "age": 52,
+    "gender": "Female",
+    "blood_group": "O+",
+    "phone": "+91-8988176527",
+    "city": "Bangalore",
+    "email": "subhash.bajaj211@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Migraine"
+    ],
+    "allergies": [
+      "NSAIDs",
+      "Penicillin",
+      "Contrast dye"
+    ],
+    "smoking": "Former",
+    "alcohol": "Occasional",
+    "bmi": 18.2
+  },
+  {
+    "patient_id": "P085",
+    "name": "Lavanya Prasad",
+    "age": 58,
+    "gender": "Male",
+    "blood_group": "B-",
+    "phone": "+91-8886836215",
+    "city": "Indore",
+    "email": "lavanya.prasad236@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "COPD",
+      "Metabolic Syndrome"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 30.1
+  },
+  {
+    "patient_id": "P086",
+    "name": "Zara Mukherjee",
+    "age": 79,
+    "gender": "Female",
+    "blood_group": "A-",
+    "phone": "+91-7220653592",
+    "city": "Lucknow",
+    "email": "zara.mukherjee980@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Chronic Pancreatitis",
+      "Stroke"
+    ],
+    "allergies": [
+      "Morphine"
+    ],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 21.8
+  },
+  {
+    "patient_id": "P087",
+    "name": "Sunita Tripathi",
+    "age": 50,
+    "gender": "Female",
+    "blood_group": "O-",
+    "phone": "+91-7454525036",
+    "city": "Hyderabad",
+    "email": "sunita.tripathi6@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Tuberculosis"
+    ],
+    "allergies": [
+      "Penicillin",
+      "Erythromycin",
+      "Contrast dye"
+    ],
+    "smoking": "Never",
+    "alcohol": "None",
+    "bmi": 29.7
+  },
+  {
+    "patient_id": "P088",
+    "name": "Raj Kumar",
+    "age": 40,
+    "gender": "Female",
+    "blood_group": "B+",
+    "phone": "+91-9438809548",
+    "city": "Indore",
+    "email": "raj.kumar451@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Heart Failure"
+    ],
+    "allergies": [
+      "Metformin",
+      "Sulfa drugs"
+    ],
+    "smoking": "Never",
+    "alcohol": "Occasional",
+    "bmi": 24.0
+  },
+  {
+    "patient_id": "P089",
+    "name": "Raja Goswami",
+    "age": 72,
+    "gender": "Male",
+    "blood_group": "AB+",
+    "phone": "+91-8515339993",
+    "city": "Patna",
+    "email": "raja.goswami477@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Gout"
+    ],
+    "allergies": [
+      "Ibuprofen",
+      "Metformin",
+      "Contrast dye"
+    ],
+    "smoking": "Current",
+    "alcohol": "Regular",
+    "bmi": 39.5
+  },
+  {
+    "patient_id": "P090",
+    "name": "Sonal Rao",
+    "age": 54,
+    "gender": "Female",
+    "blood_group": "B+",
+    "phone": "+91-7529555102",
+    "city": "Lucknow",
+    "email": "sonal.rao101@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "HIV/AIDS"
+    ],
+    "allergies": [
+      "Cephalosporins",
+      "NSAIDs"
+    ],
+    "smoking": "Current",
+    "alcohol": "None",
+    "bmi": 35.5
+  },
+  {
+    "patient_id": "P091",
+    "name": "Sonal Vyas",
+    "age": 40,
+    "gender": "Female",
+    "blood_group": "O-",
+    "phone": "+91-9404680363",
+    "city": "Lucknow",
+    "email": "sonal.vyas451@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "HIV/AIDS",
+      "Anxiety"
+    ],
+    "allergies": [
+      "Codeine",
+      "Morphine"
+    ],
+    "smoking": "Current",
+    "alcohol": "Regular",
+    "bmi": 25.3
+  },
+  {
+    "patient_id": "P092",
+    "name": "Lalit Talwar",
+    "age": 59,
+    "gender": "Female",
+    "blood_group": "B-",
+    "phone": "+91-9480797502",
+    "city": "Visakhapatnam",
+    "email": "lalit.talwar547@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Heart Failure"
+    ],
+    "allergies": [
+      "Sulfa drugs"
+    ],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 19.7
+  },
+  {
+    "patient_id": "P093",
+    "name": "Kamla Goswami",
+    "age": 19,
+    "gender": "Male",
+    "blood_group": "A+",
+    "phone": "+91-7273822919",
+    "city": "Nagpur",
+    "email": "kamla.goswami995@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Type 2 Diabetes",
+      "Breast Cancer"
+    ],
+    "allergies": [
+      "NSAIDs",
+      "Tetracycline",
+      "Erythromycin"
+    ],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 40.5
+  },
+  {
+    "patient_id": "P094",
+    "name": "Vikram Chopra",
+    "age": 33,
+    "gender": "Male",
+    "blood_group": "AB-",
+    "phone": "+91-9822208839",
+    "city": "Kochi",
+    "email": "vikram.chopra873@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Peptic Ulcer Disease",
+      "Crohn's Disease"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 38.3
+  },
+  {
+    "patient_id": "P095",
+    "name": "Suhas Gandhi",
+    "age": 74,
+    "gender": "Male",
+    "blood_group": "A+",
+    "phone": "+91-9952172487",
+    "city": "Chennai",
+    "email": "suhas.gandhi103@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Epilepsy",
+      "Hypothyroidism"
+    ],
+    "allergies": [
+      "Morphine",
+      "Ibuprofen"
+    ],
+    "smoking": "Current",
+    "alcohol": "Regular",
+    "bmi": 21.5
+  },
+  {
+    "patient_id": "P096",
+    "name": "Rajesh Sinha",
+    "age": 33,
+    "gender": "Male",
+    "blood_group": "A+",
+    "phone": "+91-9685814790",
+    "city": "Bangalore",
+    "email": "rajesh.sinha397@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Osteoarthritis"
+    ],
+    "allergies": [
+      "Metformin",
+      "Warfarin",
+      "Morphine"
+    ],
+    "smoking": "Former",
+    "alcohol": "Occasional",
+    "bmi": 35.5
+  },
+  {
+    "patient_id": "P097",
+    "name": "Alok Dey",
+    "age": 31,
+    "gender": "Male",
+    "blood_group": "A-",
+    "phone": "+91-7500922627",
+    "city": "Bangalore",
+    "email": "alok.dey14@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Breast Cancer"
+    ],
+    "allergies": [
+      "Cephalosporins"
+    ],
+    "smoking": "Never",
+    "alcohol": "None",
+    "bmi": 17.3
+  },
+  {
+    "patient_id": "P098",
+    "name": "Vaibhav Reddy",
+    "age": 65,
+    "gender": "Male",
+    "blood_group": "AB-",
+    "phone": "+91-9502684375",
+    "city": "Coimbatore",
+    "email": "vaibhav.reddy779@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Cervical Cancer"
+    ],
+    "allergies": [
+      "Morphine",
+      "Erythromycin",
+      "Contrast dye"
+    ],
+    "smoking": "Never",
+    "alcohol": "Occasional",
+    "bmi": 33.6
+  },
+  {
+    "patient_id": "P099",
+    "name": "Vibha Patil",
+    "age": 80,
+    "gender": "Male",
+    "blood_group": "A+",
+    "phone": "+91-8490879384",
+    "city": "Bangalore",
+    "email": "vibha.patil554@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Liver Cirrhosis",
+      "Glaucoma",
+      "Allergic Rhinitis"
+    ],
+    "allergies": [
+      "Erythromycin"
+    ],
+    "smoking": "Current",
+    "alcohol": "Occasional",
+    "bmi": 36.6
+  },
+  {
+    "patient_id": "P100",
+    "name": "Jay Pradhan",
+    "age": 55,
+    "gender": "Male",
+    "blood_group": "A+",
+    "phone": "+91-8745448057",
+    "city": "Surat",
+    "email": "jay.pradhan256@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Hyperthyroidism",
+      "Sarcoidosis"
+    ],
+    "allergies": [
+      "Tetracycline"
+    ],
+    "smoking": "Never",
+    "alcohol": "None",
+    "bmi": 30.0
+  },
+  {
+    "patient_id": "P101",
+    "name": "Dhruv Dube",
+    "age": 41,
+    "gender": "Male",
+    "blood_group": "AB-",
+    "phone": "+91-7144060578",
+    "city": "Bangalore",
+    "email": "dhruv.dube210@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Hypothyroidism",
+      "Polycystic Ovary Syndrome"
+    ],
+    "allergies": [
+      "Ibuprofen",
+      "Cephalosporins"
+    ],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 35.5
+  },
+  {
+    "patient_id": "P102",
+    "name": "Akash Kapoor",
+    "age": 74,
+    "gender": "Female",
+    "blood_group": "O-",
+    "phone": "+91-8600738478",
+    "city": "Bhopal",
+    "email": "akash.kapoor919@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Anemia",
+      "Glaucoma"
+    ],
+    "allergies": [
+      "Contrast dye"
+    ],
+    "smoking": "Never",
+    "alcohol": "None",
+    "bmi": 42.6
+  },
+  {
+    "patient_id": "P103",
+    "name": "Gaurav Bhatt",
+    "age": 77,
+    "gender": "Female",
+    "blood_group": "B+",
+    "phone": "+91-9933304363",
+    "city": "Vadodara",
+    "email": "gaurav.bhatt347@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Insulin Resistance"
+    ],
+    "allergies": [
+      "Amoxicillin"
+    ],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 27.6
+  },
+  {
+    "patient_id": "P104",
+    "name": "Tanvi Rao",
+    "age": 83,
+    "gender": "Male",
+    "blood_group": "O-",
+    "phone": "+91-9759670475",
+    "city": "Jaipur",
+    "email": "tanvi.rao194@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Metabolic Syndrome"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 27.5
+  },
+  {
+    "patient_id": "P105",
+    "name": "Aruna Mehta",
+    "age": 39,
+    "gender": "Male",
+    "blood_group": "A-",
+    "phone": "+91-9972144885",
+    "city": "Mumbai",
+    "email": "aruna.mehta418@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Anemia",
+      "Ulcerative Colitis"
+    ],
+    "allergies": [
+      "Ibuprofen"
+    ],
+    "smoking": "Current",
+    "alcohol": "Regular",
+    "bmi": 30.8
+  },
+  {
+    "patient_id": "P106",
+    "name": "Sonali Jha",
+    "age": 70,
+    "gender": "Female",
+    "blood_group": "A-",
+    "phone": "+91-7640844247",
+    "city": "Visakhapatnam",
+    "email": "sonali.jha772@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Breast Cancer"
+    ],
+    "allergies": [
+      "Penicillin",
+      "Contrast dye"
+    ],
+    "smoking": "Current",
+    "alcohol": "Occasional",
+    "bmi": 42.2
+  },
+  {
+    "patient_id": "P107",
+    "name": "Sushil Goswami",
+    "age": 34,
+    "gender": "Male",
+    "blood_group": "A+",
+    "phone": "+91-8961134201",
+    "city": "Delhi",
+    "email": "sushil.goswami757@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Peptic Ulcer Disease"
+    ],
+    "allergies": [
+      "Tetracycline",
+      "Latex"
+    ],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 41.7
+  },
+  {
+    "patient_id": "P108",
+    "name": "Jay Jha",
+    "age": 50,
+    "gender": "Female",
+    "blood_group": "AB-",
+    "phone": "+91-7977674073",
+    "city": "Indore",
+    "email": "jay.jha435@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Polycystic Ovary Syndrome",
+      "Atrial Fibrillation",
+      "Iron Deficiency Anemia"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 39.9
+  },
+  {
+    "patient_id": "P109",
+    "name": "Rajiv Garg",
+    "age": 25,
+    "gender": "Female",
+    "blood_group": "B+",
+    "phone": "+91-9532953348",
+    "city": "Indore",
+    "email": "rajiv.garg504@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Rheumatoid Arthritis",
+      "Lung Cancer",
+      "Metabolic Syndrome"
+    ],
+    "allergies": [],
+    "smoking": "Current",
+    "alcohol": "None",
+    "bmi": 37.1
+  },
+  {
+    "patient_id": "P110",
+    "name": "Divya Luthra",
+    "age": 61,
+    "gender": "Male",
+    "blood_group": "A-",
+    "phone": "+91-8472351517",
+    "city": "Bhopal",
+    "email": "divya.luthra366@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "HIV/AIDS",
+      "Benign Prostatic Hyperplasia",
+      "Glaucoma"
+    ],
+    "allergies": [],
+    "smoking": "Current",
+    "alcohol": "Regular",
+    "bmi": 28.9
+  },
+  {
+    "patient_id": "P111",
+    "name": "Pranav Pandey",
+    "age": 38,
+    "gender": "Male",
+    "blood_group": "AB-",
+    "phone": "+91-9968762236",
+    "city": "Indore",
+    "email": "pranav.pandey884@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Chronic Kidney Disease",
+      "Stroke"
+    ],
+    "allergies": [
+      "Cephalosporins",
+      "Metformin",
+      "NSAIDs"
+    ],
+    "smoking": "Current",
+    "alcohol": "Occasional",
+    "bmi": 24.5
+  },
+  {
+    "patient_id": "P112",
+    "name": "Vishal Bose",
+    "age": 56,
+    "gender": "Male",
+    "blood_group": "B+",
+    "phone": "+91-7278846551",
+    "city": "Surat",
+    "email": "vishal.bose126@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Liver Cirrhosis",
+      "IBS",
+      "Anxiety"
+    ],
+    "allergies": [
+      "Erythromycin"
+    ],
+    "smoking": "Current",
+    "alcohol": "Occasional",
+    "bmi": 24.2
+  },
+  {
+    "patient_id": "P113",
+    "name": "Milan Garg",
+    "age": 18,
+    "gender": "Male",
+    "blood_group": "AB+",
+    "phone": "+91-7368110590",
+    "city": "Delhi",
+    "email": "milan.garg656@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Hypertension"
+    ],
+    "allergies": [
+      "Metformin",
+      "Contrast dye"
+    ],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 41.7
+  },
+  {
+    "patient_id": "P114",
+    "name": "Girish Desai",
+    "age": 28,
+    "gender": "Female",
+    "blood_group": "A+",
+    "phone": "+91-9997949119",
+    "city": "Coimbatore",
+    "email": "girish.desai916@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Cervical Cancer",
+      "Colorectal Cancer",
+      "Epilepsy"
+    ],
+    "allergies": [],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 42.1
+  },
+  {
+    "patient_id": "P115",
+    "name": "Shilpa Shukla",
+    "age": 36,
+    "gender": "Male",
+    "blood_group": "AB+",
+    "phone": "+91-7575507600",
+    "city": "Jaipur",
+    "email": "shilpa.shukla404@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Tuberculosis",
+      "Hypothyroidism"
+    ],
+    "allergies": [
+      "Tetracycline"
+    ],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 22.0
+  },
+  {
+    "patient_id": "P116",
+    "name": "Ashish Pradhan",
+    "age": 74,
+    "gender": "Female",
+    "blood_group": "B-",
+    "phone": "+91-7813499348",
+    "city": "Lucknow",
+    "email": "ashish.pradhan853@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Osteoarthritis",
+      "Sarcoidosis",
+      "Multiple Sclerosis"
+    ],
+    "allergies": [
+      "NSAIDs"
+    ],
+    "smoking": "Never",
+    "alcohol": "None",
+    "bmi": 22.2
+  },
+  {
+    "patient_id": "P117",
+    "name": "Vandana Seth",
+    "age": 33,
+    "gender": "Female",
+    "blood_group": "O-",
+    "phone": "+91-9178005036",
+    "city": "Kanpur",
+    "email": "vandana.seth387@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Liver Cirrhosis"
+    ],
+    "allergies": [
+      "Ibuprofen",
+      "Erythromycin",
+      "NSAIDs"
+    ],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 29.3
+  },
+  {
+    "patient_id": "P118",
+    "name": "Krishna Kaul",
+    "age": 56,
+    "gender": "Male",
+    "blood_group": "AB+",
+    "phone": "+91-7441363455",
+    "city": "Ahmedabad",
+    "email": "krishna.kaul457@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Cervical Cancer",
+      "Parkinson's Disease"
+    ],
+    "allergies": [
+      "Metformin",
+      "Ibuprofen",
+      "Latex"
+    ],
+    "smoking": "Never",
+    "alcohol": "Occasional",
+    "bmi": 26.0
+  },
+  {
+    "patient_id": "P119",
+    "name": "Hemant Mehta",
+    "age": 59,
+    "gender": "Male",
+    "blood_group": "B-",
+    "phone": "+91-7779553060",
+    "city": "Kanpur",
+    "email": "hemant.mehta189@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Asthma"
+    ],
+    "allergies": [
+      "Sulfa drugs",
+      "Contrast dye",
+      "Erythromycin"
+    ],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 41.3
+  },
+  {
+    "patient_id": "P120",
+    "name": "Avinash Patel",
+    "age": 60,
+    "gender": "Male",
+    "blood_group": "O+",
+    "phone": "+91-8525065275",
+    "city": "Kolkata",
+    "email": "avinash.patel237@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Sarcoidosis"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 38.4
+  },
+  {
+    "patient_id": "P121",
+    "name": "Amita Sharma",
+    "age": 33,
+    "gender": "Female",
+    "blood_group": "AB-",
+    "phone": "+91-7252566629",
+    "city": "Chennai",
+    "email": "amita.sharma836@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Liver Cirrhosis"
+    ],
+    "allergies": [
+      "Aspirin",
+      "Latex",
+      "Codeine"
+    ],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 22.6
+  },
+  {
+    "patient_id": "P122",
+    "name": "Akash Wadhwa",
+    "age": 31,
+    "gender": "Female",
+    "blood_group": "AB+",
+    "phone": "+91-7471628615",
+    "city": "Coimbatore",
+    "email": "akash.wadhwa387@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Multiple Sclerosis",
+      "Breast Cancer",
+      "Osteoporosis"
+    ],
+    "allergies": [
+      "Ibuprofen"
+    ],
+    "smoking": "Current",
+    "alcohol": "Occasional",
+    "bmi": 27.9
+  },
+  {
+    "patient_id": "P123",
+    "name": "Ishaan Dubey",
+    "age": 46,
+    "gender": "Male",
+    "blood_group": "AB-",
+    "phone": "+91-9551109264",
+    "city": "Hyderabad",
+    "email": "ishaan.dubey916@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Ulcerative Colitis",
+      "Allergic Rhinitis",
+      "Anemia"
+    ],
+    "allergies": [
+      "Aspirin",
+      "Sulfa drugs"
+    ],
+    "smoking": "Never",
+    "alcohol": "None",
+    "bmi": 43.1
+  },
+  {
+    "patient_id": "P124",
+    "name": "Ishaan Kapur",
+    "age": 21,
+    "gender": "Male",
+    "blood_group": "AB+",
+    "phone": "+91-9950837059",
+    "city": "Hyderabad",
+    "email": "ishaan.kapur940@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Rheumatoid Arthritis"
+    ],
+    "allergies": [
+      "NSAIDs",
+      "Aspirin"
+    ],
+    "smoking": "Current",
+    "alcohol": "Regular",
+    "bmi": 38.5
+  },
+  {
+    "patient_id": "P125",
+    "name": "Kamla Iyer",
+    "age": 55,
+    "gender": "Female",
+    "blood_group": "AB+",
+    "phone": "+91-8994978706",
+    "city": "Mumbai",
+    "email": "kamla.iyer22@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Benign Prostatic Hyperplasia",
+      "Tuberculosis"
+    ],
+    "allergies": [
+      "Latex",
+      "Warfarin",
+      "Tetracycline"
+    ],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 24.3
+  },
+  {
+    "patient_id": "P126",
+    "name": "Suresh Malhotra",
+    "age": 67,
+    "gender": "Female",
+    "blood_group": "AB+",
+    "phone": "+91-8904162114",
+    "city": "Lucknow",
+    "email": "suresh.malhotra626@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Hyperthyroidism",
+      "Lung Cancer",
+      "Iron Deficiency Anemia"
+    ],
+    "allergies": [
+      "Sulfa drugs"
+    ],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 21.9
+  },
+  {
+    "patient_id": "P127",
+    "name": "Rashmi Kulkarni",
+    "age": 27,
+    "gender": "Male",
+    "blood_group": "AB+",
+    "phone": "+91-7541257944",
+    "city": "Bhopal",
+    "email": "rashmi.kulkarni550@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Epilepsy"
+    ],
+    "allergies": [
+      "Latex",
+      "Morphine",
+      "Erythromycin"
+    ],
+    "smoking": "Never",
+    "alcohol": "Occasional",
+    "bmi": 36.8
+  },
+  {
+    "patient_id": "P128",
+    "name": "Devika Malhotra",
+    "age": 62,
+    "gender": "Female",
+    "blood_group": "O-",
+    "phone": "+91-7438686488",
+    "city": "Indore",
+    "email": "devika.malhotra221@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Atrial Fibrillation"
+    ],
+    "allergies": [
+      "Aspirin"
+    ],
+    "smoking": "Current",
+    "alcohol": "None",
+    "bmi": 26.0
+  },
+  {
+    "patient_id": "P129",
+    "name": "Jaya Dubey",
+    "age": 27,
+    "gender": "Female",
+    "blood_group": "O-",
+    "phone": "+91-9678546200",
+    "city": "Kochi",
+    "email": "jaya.dubey624@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Lupus",
+      "Cervical Cancer",
+      "Asthma"
+    ],
+    "allergies": [
+      "Codeine"
+    ],
+    "smoking": "Current",
+    "alcohol": "Regular",
+    "bmi": 22.1
+  },
+  {
+    "patient_id": "P130",
+    "name": "Avinash Nair",
+    "age": 55,
+    "gender": "Female",
+    "blood_group": "B-",
+    "phone": "+91-7798642489",
+    "city": "Surat",
+    "email": "avinash.nair298@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Psoriasis",
+      "Anxiety"
+    ],
+    "allergies": [
+      "Warfarin",
+      "Ibuprofen",
+      "Erythromycin"
+    ],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 19.7
+  },
+  {
+    "patient_id": "P131",
+    "name": "Kamal Madan",
+    "age": 66,
+    "gender": "Female",
+    "blood_group": "A-",
+    "phone": "+91-9509613713",
+    "city": "Kolkata",
+    "email": "kamal.madan712@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Allergic Rhinitis"
+    ],
+    "allergies": [],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 27.8
+  },
+  {
+    "patient_id": "P132",
+    "name": "Sanjay Singh",
+    "age": 29,
+    "gender": "Male",
+    "blood_group": "A+",
+    "phone": "+91-8413077261",
+    "city": "Kochi",
+    "email": "sanjay.singh783@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Rheumatoid Arthritis",
+      "COPD",
+      "Iron Deficiency Anemia"
+    ],
+    "allergies": [
+      "Penicillin",
+      "Metformin"
+    ],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 36.9
+  },
+  {
+    "patient_id": "P133",
+    "name": "Prakash Saxena",
+    "age": 26,
+    "gender": "Female",
+    "blood_group": "AB+",
+    "phone": "+91-9448710186",
+    "city": "Hyderabad",
+    "email": "prakash.saxena228@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Depression",
+      "Metabolic Syndrome"
+    ],
+    "allergies": [
+      "Contrast dye"
+    ],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 42.7
+  },
+  {
+    "patient_id": "P134",
+    "name": "Avinash Garg",
+    "age": 65,
+    "gender": "Female",
+    "blood_group": "B-",
+    "phone": "+91-9905039950",
+    "city": "Jaipur",
+    "email": "avinash.garg53@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Ulcerative Colitis"
+    ],
+    "allergies": [
+      "Sulfa drugs"
+    ],
+    "smoking": "Never",
+    "alcohol": "None",
+    "bmi": 36.1
+  },
+  {
+    "patient_id": "P135",
+    "name": "Sonali Saxena",
+    "age": 72,
+    "gender": "Male",
+    "blood_group": "AB-",
+    "phone": "+91-8364980053",
+    "city": "Coimbatore",
+    "email": "sonali.saxena928@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Stroke",
+      "Multiple Sclerosis"
+    ],
+    "allergies": [],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 37.8
+  },
+  {
+    "patient_id": "P136",
+    "name": "Amit Bose",
+    "age": 75,
+    "gender": "Female",
+    "blood_group": "A+",
+    "phone": "+91-7965675814",
+    "city": "Bangalore",
+    "email": "amit.bose34@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Heart Failure",
+      "Chronic Pancreatitis"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 17.3
+  },
+  {
+    "patient_id": "P137",
+    "name": "Gaurav Khanna",
+    "age": 77,
+    "gender": "Male",
+    "blood_group": "AB-",
+    "phone": "+91-9895910051",
+    "city": "Jaipur",
+    "email": "gaurav.khanna839@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Osteoporosis"
+    ],
+    "allergies": [],
+    "smoking": "Current",
+    "alcohol": "Regular",
+    "bmi": 23.4
+  },
+  {
+    "patient_id": "P138",
+    "name": "Tarun Nanda",
+    "age": 46,
+    "gender": "Female",
+    "blood_group": "B+",
+    "phone": "+91-8700663963",
+    "city": "Visakhapatnam",
+    "email": "tarun.nanda65@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Migraine"
+    ],
+    "allergies": [
+      "Ibuprofen",
+      "Sulfa drugs",
+      "Latex"
+    ],
+    "smoking": "Former",
+    "alcohol": "Regular",
+    "bmi": 36.1
+  },
+  {
+    "patient_id": "P139",
+    "name": "Nitin Ghosh",
+    "age": 83,
+    "gender": "Female",
+    "blood_group": "O+",
+    "phone": "+91-7896599377",
+    "city": "Surat",
+    "email": "nitin.ghosh61@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Stroke",
+      "Hypertension",
+      "Lupus"
+    ],
+    "allergies": [
+      "Warfarin",
+      "Ibuprofen"
+    ],
+    "smoking": "Never",
+    "alcohol": "None",
+    "bmi": 35.8
+  },
+  {
+    "patient_id": "P140",
+    "name": "Anil Mukherjee",
+    "age": 63,
+    "gender": "Male",
+    "blood_group": "O+",
+    "phone": "+91-8638193934",
+    "city": "Bangalore",
+    "email": "anil.mukherjee279@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "HIV/AIDS",
+      "Chronic Pancreatitis",
+      "Liver Cirrhosis"
+    ],
+    "allergies": [
+      "Morphine",
+      "Penicillin"
+    ],
+    "smoking": "Never",
+    "alcohol": "Occasional",
+    "bmi": 39.3
+  },
+  {
+    "patient_id": "P141",
+    "name": "Dhruv Garg",
+    "age": 58,
+    "gender": "Male",
+    "blood_group": "A-",
+    "phone": "+91-9308489700",
+    "city": "Patna",
+    "email": "dhruv.garg508@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Prostate Cancer",
+      "Stroke",
+      "Peptic Ulcer Disease"
+    ],
+    "allergies": [],
+    "smoking": "Never",
+    "alcohol": "None",
+    "bmi": 30.4
+  },
+  {
+    "patient_id": "P142",
+    "name": "Kamla Chakraborty",
+    "age": 74,
+    "gender": "Male",
+    "blood_group": "AB+",
+    "phone": "+91-8900901714",
+    "city": "Bangalore",
+    "email": "kamla.chakraborty498@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Breast Cancer",
+      "Obesity",
+      "Ulcerative Colitis"
+    ],
+    "allergies": [
+      "Warfarin"
+    ],
+    "smoking": "Former",
+    "alcohol": "Occasional",
+    "bmi": 40.7
+  },
+  {
+    "patient_id": "P143",
+    "name": "Vinod Jha",
+    "age": 72,
+    "gender": "Female",
+    "blood_group": "O+",
+    "phone": "+91-7694561966",
+    "city": "Ahmedabad",
+    "email": "vinod.jha978@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Stroke"
+    ],
+    "allergies": [
+      "Codeine",
+      "Morphine",
+      "Tetracycline"
+    ],
+    "smoking": "Current",
+    "alcohol": "Occasional",
+    "bmi": 27.7
+  },
+  {
+    "patient_id": "P144",
+    "name": "Yamini Srivastava",
+    "age": 80,
+    "gender": "Female",
+    "blood_group": "A-",
+    "phone": "+91-8742894425",
+    "city": "Vadodara",
+    "email": "yamini.srivastava820@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Coronary Artery Disease",
+      "Colorectal Cancer"
+    ],
+    "allergies": [
+      "Tetracycline",
+      "Erythromycin"
+    ],
+    "smoking": "Never",
+    "alcohol": "Occasional",
+    "bmi": 33.1
+  },
+  {
+    "patient_id": "P145",
+    "name": "Anu Pradhan",
+    "age": 20,
+    "gender": "Male",
+    "blood_group": "O+",
+    "phone": "+91-7148943157",
+    "city": "Kochi",
+    "email": "anu.pradhan47@hotmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Migraine",
+      "Osteoporosis"
+    ],
+    "allergies": [
+      "Latex"
+    ],
+    "smoking": "Current",
+    "alcohol": "Occasional",
+    "bmi": 18.6
+  },
+  {
+    "patient_id": "P146",
+    "name": "Rita Reddy",
+    "age": 55,
+    "gender": "Male",
+    "blood_group": "A-",
+    "phone": "+91-8306662873",
+    "city": "Mumbai",
+    "email": "rita.reddy95@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Peptic Ulcer Disease",
+      "Atrial Fibrillation"
+    ],
+    "allergies": [
+      "Morphine"
+    ],
+    "smoking": "Current",
+    "alcohol": "Regular",
+    "bmi": 19.3
+  },
+  {
+    "patient_id": "P147",
+    "name": "Ishaan Jha",
+    "age": 30,
+    "gender": "Female",
+    "blood_group": "AB-",
+    "phone": "+91-8778739715",
+    "city": "Delhi",
+    "email": "ishaan.jha538@outlook.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Peripheral Artery Disease",
+      "Stroke",
+      "Chronic Pancreatitis"
+    ],
+    "allergies": [],
+    "smoking": "Former",
+    "alcohol": "None",
+    "bmi": 34.4
+  },
+  {
+    "patient_id": "P148",
+    "name": "Prashant Talwar",
+    "age": 38,
+    "gender": "Male",
+    "blood_group": "O-",
+    "phone": "+91-9571020080",
+    "city": "Nagpur",
+    "email": "prashant.talwar992@rediffmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "COPD",
+      "Parkinson's Disease"
+    ],
+    "allergies": [],
+    "smoking": "Never",
+    "alcohol": "None",
+    "bmi": 42.0
+  },
+  {
+    "patient_id": "P149",
+    "name": "Megha Sharma",
+    "age": 57,
+    "gender": "Male",
+    "blood_group": "B-",
+    "phone": "+91-9208478792",
+    "city": "Kolkata",
+    "email": "megha.sharma997@gmail.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Osteoarthritis"
+    ],
+    "allergies": [
+      "Erythromycin"
+    ],
+    "smoking": "Never",
+    "alcohol": "Regular",
+    "bmi": 27.2
+  },
+  {
+    "patient_id": "P150",
+    "name": "Bhavna Kulkarni",
+    "age": 72,
+    "gender": "Female",
+    "blood_group": "A+",
+    "phone": "+91-9250257242",
+    "city": "Nagpur",
+    "email": "bhavna.kulkarni408@yahoo.com",
+    "password": "shreyash#123",
+    "diagnosis": [
+      "Migraine",
+      "Breast Cancer",
+      "Anemia"
+    ],
+    "allergies": [],
+    "smoking": "Never",
+    "alcohol": "None",
+    "bmi": 43.4
+  }
+]

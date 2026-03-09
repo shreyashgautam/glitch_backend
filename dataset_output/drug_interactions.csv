@@ -1,0 +1,51 @@
+drug_a,drug_b,severity,risk,mechanism,action_required
+Warfarin,Aspirin,High,Increased bleeding risk,Pharmacodynamic,Avoid combination
+Warfarin,Ibuprofen,High,GI bleeding and anticoagulation potentiation,Pharmacodynamic,Avoid combination
+Warfarin,Amiodarone,High,"Elevated INR, bleeding risk",Pharmacodynamic,Avoid combination
+Metformin,Alcohol,Moderate,Lactic acidosis risk,Unknown,Monitor closely
+Metformin,Contrast Dye,High,Acute kidney injury and lactic acidosis,Pharmacodynamic,Avoid combination
+Metformin,Furosemide,Moderate,Renal clearance reduced,Pharmacokinetic,Monitor closely
+ACE Inhibitor,Potassium Supplements,Moderate,Hyperkalemia,Unknown,Monitor closely
+ACE Inhibitor,NSAIDs,Moderate,Reduced antihypertensive effect and nephrotoxicity,Pharmacodynamic,Monitor closely
+Losartan,Spironolactone,High,Severe hyperkalemia,Pharmacodynamic,Avoid combination
+Digoxin,Amiodarone,High,Digoxin toxicity,Pharmacodynamic,Avoid combination
+Digoxin,Furosemide,Moderate,Hypokalemia increases digoxin toxicity,Pharmacokinetic,Monitor closely
+Clopidogrel,Omeprazole,Moderate,Reduced antiplatelet effect,Pharmacodynamic,Monitor closely
+Aspirin,Ibuprofen,Moderate,Reduced cardioprotective effect of aspirin,Pharmacodynamic,Monitor closely
+Atorvastatin,Amiodarone,Moderate,Myopathy risk,Both,Monitor closely
+Atorvastatin,Erythromycin,High,Rhabdomyolysis risk,Unknown,Avoid combination
+Methotrexate,NSAIDs,High,Methotrexate toxicity,Unknown,Avoid combination
+Methotrexate,Trimethoprim,High,Bone marrow suppression,Pharmacokinetic,Avoid combination
+Sulfasalazine,Methotrexate,Moderate,Additive hepatotoxicity,Pharmacodynamic,Monitor closely
+Prednisolone,Ibuprofen,High,GI ulceration,Pharmacokinetic,Avoid combination
+Prednisolone,Metformin,Moderate,Hyperglycemia,Both,Monitor closely
+Hydrochlorothiazide,Lithium,High,Lithium toxicity,Pharmacokinetic,Avoid combination
+Hydrochlorothiazide,NSAIDs,Moderate,Reduced diuretic effect and nephrotoxicity,Unknown,Monitor closely
+Amlodipine,Simvastatin,High,Myopathy risk,Pharmacokinetic,Avoid combination
+Amlodipine,Grapefruit Juice,Moderate,Increased drug levels,Both,Monitor closely
+Sertraline,Tramadol,High,Serotonin syndrome,Pharmacokinetic,Avoid combination
+Sertraline,MAOIs,Contraindicated,"Serotonin syndrome, potentially fatal",Both,Do not use together
+Escitalopram,Metoprolol,Moderate,Bradycardia,Pharmacokinetic,Monitor closely
+Alprazolam,Alcohol,High,"CNS depression, respiratory failure",Pharmacodynamic,Avoid combination
+Alprazolam,Opioids,High,Respiratory depression,Unknown,Avoid combination
+Insulin,Alcohol,Moderate,Hypoglycemia,Unknown,Monitor closely
+Insulin,Beta Blockers,Moderate,Masks hypoglycemia symptoms,Pharmacokinetic,Monitor closely
+Glipizide,Fluconazole,High,Severe hypoglycemia,Pharmacokinetic,Avoid combination
+Sitagliptin,ACE Inhibitor,Low,Angioedema risk,Pharmacokinetic,Use with caution
+Empagliflozin,Diuretics,Moderate,Volume depletion and hypotension,Both,Monitor closely
+Furosemide,Gentamicin,High,Ototoxicity and nephrotoxicity,Pharmacokinetic,Avoid combination
+Furosemide,Lithium,High,Lithium toxicity,Pharmacokinetic,Avoid combination
+Ramipril,Aliskiren,High,Renal failure and hyperkalemia,Pharmacokinetic,Avoid combination
+Atenolol,Verapamil,High,Heart block and cardiac arrest,Pharmacodynamic,Avoid combination
+Metoprolol,Clonidine,High,Rebound hypertension on withdrawal,Pharmacokinetic,Avoid combination
+Clopidogrel,Aspirin,Moderate,"Increased bleeding risk, sometimes intended",Unknown,Monitor closely
+Amiodarone,Warfarin,High,Markedly elevated INR,Both,Avoid combination
+Hydroxychloroquine,QT-prolonging drugs,High,Torsades de pointes,Unknown,Avoid combination
+Montelukast,Aspirin,Low,May reduce effectiveness,Unknown,Use with caution
+Budesonide,Itraconazole,High,Adrenal suppression,Both,Avoid combination
+Tiotropium,Anticholinergics,Moderate,Additive anticholinergic effects,Unknown,Monitor closely
+Roflumilast,Theophylline,High,Additive CNS effects,Both,Avoid combination
+Calcium Carbonate,Levothyroxine,Moderate,Reduced absorption of levothyroxine,Both,Monitor closely
+Sodium Bicarbonate,Aspirin,Moderate,Increased aspirin excretion,Both,Monitor closely
+Vitamin D3,Thiazide Diuretics,Moderate,Hypercalcemia risk,Both,Monitor closely
+Erythropoietin,ACE Inhibitor,Moderate,Reduced erythropoietin response,Pharmacodynamic,Monitor closely

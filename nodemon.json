@@ -1,0 +1,7 @@
+{
+  "watch": ["server.js", "app.js", "routes", "agents", "tools", "blockchain", "rag"],
+  "ignore": ["data/vectra_index/*", "uploads/*", "dataset_output/*", "tests/*"],
+  "ext": "js,json",
+  "delay": "300"
+}
+

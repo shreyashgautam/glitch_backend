@@ -1,0 +1,296 @@
+{
+  "info": {
+    "name": "Patient Intelligence Backend",
+    "description": "Complete API collection for backend1 project.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "GET Root Health",
+          "request": {
+            "method": "GET",
+            "url": "{{baseRoot}}/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Login Doctor",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"nandakumar@kathir.in\",\n  \"password\": \"doctor123\",\n  \"role\": \"doctor\"\n}"
+            },
+            "url": "{{baseUrl}}/auth/login"
+          }
+        },
+        {
+          "name": "Login Patient",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"rajan@patient.in\",\n  \"password\": \"patient123\",\n  \"role\": \"patient\"\n}"
+            },
+            "url": "{{baseUrl}}/auth/login"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Patient (Legacy)",
+      "item": [
+        { "name": "Get Patient", "request": { "method": "GET", "url": "{{baseUrl}}/patient/{{patientId}}" } },
+        { "name": "Get Brief", "request": { "method": "GET", "url": "{{baseUrl}}/patient/{{patientId}}/brief" } },
+        { "name": "Get Lab Trend by Test", "request": { "method": "GET", "url": "{{baseUrl}}/patient/{{patientId}}/labs/HbA1c" } },
+        { "name": "Get Flags", "request": { "method": "GET", "url": "{{baseUrl}}/patient/{{patientId}}/flags" } },
+        { "name": "Get Overdue Tests", "request": { "method": "GET", "url": "{{baseUrl}}/patient/{{patientId}}/overdue-tests" } },
+        {
+          "name": "Search Patient History",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"query\": \"fatigue\"\n}" },
+            "url": "{{baseUrl}}/patient/{{patientId}}/search"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Records (Frontend Compatible)",
+      "item": [
+        { "name": "Get Record Summary", "request": { "method": "GET", "url": "{{baseUrl}}/records/{{patientId}}" } },
+        { "name": "Get Record Brief", "request": { "method": "GET", "url": "{{baseUrl}}/records/{{patientId}}/brief" } },
+        { "name": "Get Record Labs", "request": { "method": "GET", "url": "{{baseUrl}}/records/{{patientId}}/labs" } },
+        { "name": "Get Record Flags", "request": { "method": "GET", "url": "{{baseUrl}}/records/{{patientId}}/flags" } },
+        { "name": "Get Record Overdue Tests", "request": { "method": "GET", "url": "{{baseUrl}}/records/{{patientId}}/overdue-tests" } },
+        {
+          "name": "Search Records",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"patientId\": \"{{patientId}}\",\n  \"query\": \"fatigue\"\n}"
+            },
+            "url": "{{baseUrl}}/records/search"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Clinical Tools",
+      "item": [
+        {
+          "name": "Check Drug Interactions",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"patientId\": \"{{patientId}}\",\n  \"medications\": [\"Warfarin\", \"Aspirin\"]\n}"
+            },
+            "url": "{{baseUrl}}/drugs/check"
+          }
+        },
+        {
+          "name": "Get Pharmacy Links",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/pharmacy/Metformin"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Agents",
+      "item": [
+        {
+          "name": "Query Agent",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"patientId\": \"{{patientId}}\",\n  \"query\": \"What are major issues in last 6 months?\"\n}"
+            },
+            "url": "{{baseUrl}}/agent/query"
+          }
+        },
+        {
+          "name": "Second Opinion",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"patientId\": \"{{patientId}}\",\n  \"proposedDiagnosis\": \"Diabetic nephropathy progression\"\n}"
+            },
+            "url": "{{baseUrl}}/agent/second-opinion"
+          }
+        },
+        {
+          "name": "Triage Agent",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"patientId\": \"{{patientId}}\"\n}" },
+            "url": "{{baseUrl}}/agent/triage"
+          }
+        },
+        {
+          "name": "Receptionist Agent",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"message\": \"How can I book appointment?\",\n  \"history\": []\n}"
+            },
+            "url": "{{baseUrl}}/agent/receptionist"
+          }
+        },
+        {
+          "name": "Nutrition Agent",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"patientId\": \"{{patientId}}\",\n  \"foodDescription\": \"I eat rice and sweets daily\"\n}"
+            },
+            "url": "{{baseUrl}}/agent/nutrition"
+          }
+        },
+        {
+          "name": "OCR Agent (Upload)",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                { "key": "patientId", "value": "{{patientId}}", "type": "text" },
+                { "key": "autoIngest", "value": "true", "type": "text" },
+                { "key": "document", "type": "file", "src": "" }
+              ]
+            },
+            "url": "{{baseUrl}}/agent/ocr"
+          }
+        },
+        {
+          "name": "Ingest Structured OCR",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"patientId\": \"{{patientId}}\",\n  \"structuredOCRData\": {\n    \"diagnosis\": \"Type 2 Diabetes\"\n  }\n}"
+            },
+            "url": "{{baseUrl}}/agent/ingest"
+          }
+        },
+        {
+          "name": "Intake Orchestrator",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                { "key": "patientId", "value": "{{patientId}}", "type": "text" },
+                { "key": "query", "value": "Summarize key concerns", "type": "text" },
+                { "key": "fromDoctor", "value": "Dr. Nandakumar", "type": "text" },
+                { "key": "toSpecialty", "value": "Nephrology", "type": "text" },
+                { "key": "reason", "value": "Creatinine rising", "type": "text" },
+                { "key": "document", "type": "file", "src": "" }
+              ]
+            },
+            "url": "{{baseUrl}}/agent/intake"
+          }
+        },
+        {
+          "name": "Transfer Agent",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"patientId\": \"{{patientId}}\",\n  \"fromDoctor\": \"Dr. Nandakumar\",\n  \"toSpecialty\": \"Cardiology\",\n  \"reason\": \"Risk assessment needed\",\n  \"includeAnalysis\": true\n}"
+            },
+            "url": "{{baseUrl}}/agent/transfer"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Workflow",
+      "item": [
+        {
+          "name": "Referral",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"patientId\": \"{{patientId}}\",\n  \"fromDoctor\": \"Dr. Nandakumar\",\n  \"toSpecialty\": \"Nephrology\",\n  \"reason\": \"CKD progression\"\n}"
+            },
+            "url": "{{baseUrl}}/referral"
+          }
+        },
+        {
+          "name": "Emergency",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"patientId\": \"{{patientId}}\",\n  \"actorId\": \"D001\"\n}"
+            },
+            "url": "{{baseUrl}}/emergency"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Blockchain",
+      "item": [
+        { "name": "Get Chain", "request": { "method": "GET", "url": "{{baseUrl}}/blockchain/chain" } },
+        { "name": "Verify Chain", "request": { "method": "GET", "url": "{{baseUrl}}/blockchain/verify" } },
+        { "name": "Export CSV", "request": { "method": "GET", "url": "{{baseUrl}}/blockchain/export" } }
+      ]
+    },
+    {
+      "name": "WhatsApp",
+      "item": [
+        {
+          "name": "Incoming Webhook Test",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/x-www-form-urlencoded" }],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                { "key": "Body", "value": "help", "type": "text" },
+                { "key": "From", "value": "whatsapp:+919999999999", "type": "text" }
+              ]
+            },
+            "url": "{{baseUrl}}/whatsapp/incoming"
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    { "key": "baseRoot", "value": "http://localhost:4000" },
+    { "key": "baseUrl", "value": "http://localhost:4000/api" },
+    { "key": "patientId", "value": "P001" }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "guidelines": [
+    { "code": "E11", "condition": "Type 2 Diabetes Mellitus", "test": "HbA1c", "intervalMonths": 3, "action": "Flag and recommend immediate booking if overdue" },
+    { "code": "E11", "condition": "Type 2 Diabetes Mellitus", "test": "Serum Creatinine + eGFR", "intervalMonths": 6, "action": "Flag nephropathy risk if overdue" },
+    { "code": "E11", "condition": "Type 2 Diabetes Mellitus", "test": "Urine Microalbumin", "intervalMonths": 12, "action": "Screen for early nephropathy" },
+    { "code": "E11", "condition": "Type 2 Diabetes Mellitus", "test": "Dilated Eye Exam (Fundoscopy)", "intervalMonths": 12, "action": "Screen for diabetic retinopathy" },
+    { "code": "I10", "condition": "Hypertension", "test": "ECG", "intervalMonths": 12, "action": "Cardiac risk assessment" },
+    { "code": "I10", "condition": "Hypertension", "test": "Lipid Profile", "intervalMonths": 6, "action": "Cardiovascular risk assessment" },
+    { "code": "I10", "condition": "Hypertension", "test": "Renal Function Tests", "intervalMonths": 6, "action": "Monitor hypertensive nephropathy" },
+    { "code": "E03", "condition": "Hypothyroidism", "test": "TSH", "intervalMonths": 6, "action": "Dose adjustment review" },
+    { "code": "E03", "condition": "Hypothyroidism", "test": "Full Thyroid Panel (T3, T4, TSH)", "intervalMonths": 12, "action": "Annual comprehensive thyroid review" },
+    { "code": "D50", "condition": "Iron Deficiency Anaemia", "test": "CBC + Haemoglobin", "intervalMonths": 3, "action": "Monitor treatment response" },
+    { "code": "D50", "condition": "Iron Deficiency Anaemia", "test": "Serum Ferritin", "intervalMonths": 6, "action": "Assess iron stores" },
+    { "code": "N08", "condition": "Diabetic Nephropathy", "test": "eGFR + Creatinine", "intervalMonths": 3, "action": "Nephrology referral if eGFR <60" },
+    { "code": "O13", "condition": "Gestational Hypertension", "test": "BP Monitoring + Urinalysis", "intervalMonths": 0.25, "action": "Weekly monitoring — escalate to Obstetrics if worsening" }
+  ],
+  "specialtyRouting": [
+    { "flag": "HbA1c >8.5 worsening trend", "specialty": "Diabetology", "department": "General Medicine & Diabetology", "priority": "HIGH" },
+    { "flag": "Creatinine >1.5 or eGFR <60", "specialty": "Nephrology", "department": "Urology", "priority": "HIGH" },
+    { "flag": "BP >140 uncontrolled despite medication", "specialty": "Cardiology", "department": "Cardiology", "priority": "MEDIUM" },
+    { "flag": "TSH abnormal on treatment", "specialty": "Endocrinology", "department": "General Medicine & Diabetology", "priority": "MEDIUM" },
+    { "flag": "Haemoglobin <8 g/dL", "specialty": "Haematology", "department": "General Medicine & Diabetology", "priority": "HIGH" },
+    { "flag": "Drug interaction CRITICAL severity", "specialty": "Clinical Review", "department": "General Medicine & Diabetology", "priority": "CRITICAL" },
+    { "flag": "Antibiotic same class 3x in 6 months", "specialty": "Infectious Disease", "department": "General Medicine & Diabetology", "priority": "MEDIUM" },
+    { "flag": "Chest pain in notes", "specialty": "Cardiology", "department": "Cardiology", "priority": "CRITICAL" },
+    { "flag": "Post-surgical follow-up", "specialty": "Orthopaedics", "department": "Spine & Orthopaedics", "priority": "MEDIUM" },
+    { "flag": "Maternal BP elevation", "specialty": "Obstetrics", "department": "Obstetrics & Gynaecology", "priority": "HIGH" }
+  ],
+  "kathirDepartments": [
+    "Critical Care & Anaesthesiology",
+    "Cardiology",
+    "General Medicine & Diabetology",
+    "Dermatology",
+    "General & Plastic Surgery",
+    "Medical & Surgical Gastroenterology",
+    "Otorhinolaryngology (ENT)",
+    "Obstetrics & Gynaecology",
+    "General Paediatrics",
+    "Spine & Orthopaedics",
+    "Trauma & Emergency",
+    "Urology"
+  ]
+}
