@@ -128,18 +128,81 @@ function normalizeName(input) {
     .trim();
 }
 
+function levenshtein(a, b) {
+  const s = String(a || '');
+  const t = String(b || '');
+  const n = s.length;
+  const m = t.length;
+  if (!n) return m;
+  if (!m) return n;
+  const dp = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(0));
+  for (let i = 0; i <= n; i += 1) dp[i][0] = i;
+  for (let j = 0; j <= m; j += 1) dp[0][j] = j;
+  for (let i = 1; i <= n; i += 1) {
+    for (let j = 1; j <= m; j += 1) {
+      const cost = s[i - 1] === t[j - 1] ? 0 : 1;
+      dp[i][j] = Math.min(
+        dp[i - 1][j] + 1,
+        dp[i][j - 1] + 1,
+        dp[i - 1][j - 1] + cost
+      );
+    }
+  }
+  return dp[n][m];
+}
+
 async function getAllPatientsLiteFromMongo() {
   if (!MongoClient || !process.env.MONGO_URI) return null;
-  const dbName = process.env.MONGO_DB_NAME || 'medai';
   const client = new MongoClient(process.env.MONGO_URI);
   try {
     await client.connect();
-    const db = client.db(dbName);
-    const rows = await db.collection('patients').find({}, { projection: { patient_id: 1, name: 1, diagnosis: 1 } }).toArray();
+    // Prefer explicit DB name when provided, otherwise use the DB from MONGO_URI.
+    const dbName = String(process.env.MONGO_DB_NAME || '').trim();
+    const db = dbName ? client.db(dbName) : client.db();
+    const rows = await db
+      .collection('patients')
+      .find(
+        {},
+        {
+          projection: {
+            _id: 1,
+            patient_id: 1,
+            id: 1,
+            name: 1,
+            age: 1,
+            gender: 1,
+            diagnosis: 1,
+            allergies: 1,
+            email: 1,
+            phone: 1,
+            blood_group: 1,
+            bmi: 1,
+            city: 1,
+            smoking: 1,
+            alcohol: 1,
+            status: 1,
+            lastVisit: 1,
+          },
+        }
+      )
+      .toArray();
     return rows.map((r) => ({
+      _id: r._id,
       patient_id: r.patient_id || r.id,
       name: r.name,
+      age: r.age ?? null,
+      gender: r.gender ?? null,
       diagnosis: r.diagnosis || [],
+      allergies: r.allergies || [],
+      email: r.email || null,
+      phone: r.phone || null,
+      blood_group: r.blood_group || null,
+      bmi: r.bmi ?? null,
+      city: r.city || null,
+      smoking: r.smoking || null,
+      alcohol: r.alcohol || null,
+      status: r.status || null,
+      lastVisit: r.lastVisit || null,
     }));
   } finally {
     await client.close();
@@ -166,11 +229,28 @@ function extractLikelyPatientName(query) {
   const text = String(query || '').trim();
   const patterns = [
     /(?:of|for|about)\s+([a-zA-Z][a-zA-Z\s]{2,50})/i,
+    /(?:does|is|was)\s+([a-zA-Z][a-zA-Z\s]{1,50})/i,
+    /(?:taken by|by)\s+([a-zA-Z][a-zA-Z\s]{1,50})/i,
     /patient\s+([a-zA-Z][a-zA-Z\s]{2,50})/i,
   ];
   for (const p of patterns) {
     const m = text.match(p);
-    if (m?.[1]) return m[1].trim();
+    if (!m?.[1]) continue;
+    const cleaned = m[1]
+      .replace(/\b(takes?|take|taking|medications?|medicine|history|details?|issues?|problem|problems|disease|diagnosis|all)\b/gi, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (cleaned) return cleaned;
+  }
+  // Fallback: pick a trailing name-like token only for person-oriented questions.
+  const personIntent = /\b(about|for|by|does|tell me|medicine|medications|history|issues|problem|disease|diagnosis)\b/i.test(text);
+  if (personIntent) {
+    const fallback = text
+      .replace(/[^a-zA-Z\s]/g, ' ')
+      .split(/\s+/)
+      .filter(Boolean)
+      .filter((w) => !/^(what|which|who|tell|me|about|medicine|medications|does|do|for|of|by|taken|take|history|all|the|is|are|please)$/i.test(w));
+    if (fallback.length) return fallback[fallback.length - 1];
   }
   return null;
 }
@@ -193,6 +273,30 @@ async function resolvePatientIdByName(name) {
   const contains = all.find((p) => normalizeName(p.name).includes(target) || target.includes(normalizeName(p.name)));
   if (contains) return contains;
 
+  // Token-level fuzzy match for typos like "vikran" -> "vikram".
+  const targetTokens = target.split(' ').filter(Boolean);
+  const ranked = all
+    .map((p) => {
+      const nameNorm = normalizeName(p.name);
+      const nameTokens = nameNorm.split(' ').filter(Boolean);
+      let best = Number.POSITIVE_INFINITY;
+      for (const t of targetTokens) {
+        for (const n of nameTokens) {
+          const dist = levenshtein(t, n);
+          if (dist < best) best = dist;
+        }
+      }
+      return { p, best, nameNorm };
+    })
+    .sort((a, b) => a.best - b.best);
+
+  const best = ranked[0];
+  if (best) {
+    const tokenLen = Math.max(...targetTokens.map((t) => t.length), 0);
+    const allowed = tokenLen >= 7 ? 2 : tokenLen >= 5 ? 1 : 0;
+    if (best.best <= allowed) return best.p;
+  }
+
   return null;
 }
 
@@ -207,6 +311,7 @@ async function getPatientContext(patientId) {
 module.exports = {
   getPatientContext,
   getAllPatientsLite,
+  getAllPatientsLiteFromMongo,
   extractLikelyPatientName,
   resolvePatientIdByName,
 };

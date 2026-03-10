@@ -50,6 +50,109 @@ RAG Retrieved Context:
 ${ragText || 'NA'}`;
 }
 
+function compactList(items = [], limit = 4) {
+  const clean = (items || []).filter(Boolean);
+  if (clean.length <= limit) return clean.join(', ');
+  return `${clean.slice(0, limit).join(', ')} (+${clean.length - limit} more)`;
+}
+
+function isGroqRateLimitError(err) {
+  const status = Number(err?.status || err?.code || 0);
+  const message = String(err?.message || err?.error?.message || '').toLowerCase();
+  return status === 429 || message.includes('rate limit') || message.includes('rate_limit_exceeded');
+}
+
+function extractRetryAfterText(err) {
+  const msg = String(err?.message || err?.error?.message || '');
+  const m = msg.match(/try again in\s+([^.,]+(?:\.[0-9]+s|s)?)/i);
+  return m?.[1] ? String(m[1]).trim() : null;
+}
+
+function formatDateSafe(value) {
+  if (!value) return 'NA';
+  const d = new Date(value);
+  if (Number.isNaN(d.getTime())) return String(value);
+  return d.toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' });
+}
+
+function pickAbnormalLabs(labs = [], limit = 5) {
+  return (labs || [])
+    .filter((l) => {
+      const s = String(l.status || '').toLowerCase();
+      return s.includes('high') || s.includes('low') || s.includes('critical') || s.includes('abnormal');
+    })
+    .sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime())
+    .slice(0, limit);
+}
+
+function buildFallbackSummaryFromBundle(bundle, reason = '') {
+  const p = bundle?.patient || {};
+  const visits = [...(bundle?.visits || [])].sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime());
+  const lastVisit = visits[0];
+  const meds = (bundle?.medications || []).slice(0, 8);
+  const alerts = (bundle?.alerts || []).slice(0, 6);
+  const abnormalLabs = pickAbnormalLabs(bundle?.labs || [], 5);
+
+  const lines = [];
+  lines.push(`${p.age ?? 'Unknown-age'}-year-old ${String(p.gender || 'patient').toLowerCase()} with ${(p.diagnosis || []).join(', ') || 'chronic conditions'}.`);
+  lines.push(`Current medications: ${meds.length ? meds.map((m) => `${m.drug} ${m.dose || ''}`.trim()).join(', ') : 'No active medication list available'}.`);
+  lines.push(`Active alerts: ${alerts.length ? alerts.map((a) => a.message).join('; ') : 'No major active alerts detected'}.`);
+  lines.push(`Recent abnormal labs: ${abnormalLabs.length ? abnormalLabs.map((l) => `${l.test} ${l.status} (${l.value}${l.unit || ''})`).join('; ') : 'No clear abnormal lab trend found'}.`);
+  lines.push(`Last visit: ${formatDateSafe(lastVisit?.date)}${lastVisit?.doctor ? ` with ${lastVisit.doctor}` : ''}${lastVisit?.department ? ` (${lastVisit.department})` : ''}.`);
+  lines.push(`Next steps: review medication adherence, recheck key labs, and schedule follow-up with relevant specialty if worsening trend continues.`);
+  if (reason) lines.push(`AI provider limit reached (${reason}). Showing database-backed fallback summary.`);
+  lines.push('Physician review required.');
+  return lines.slice(0, 10);
+}
+
+function buildFallbackAnswerFromBundle(bundle, query = '', reason = '') {
+  const q = String(query || '').toLowerCase();
+  const detailed = wantsDetailedOutput(query) || Boolean(getRequestedWordCount(query));
+  const p = bundle?.patient || {};
+  const visits = [...(bundle?.visits || [])].sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime());
+  const lastVisit = visits[0];
+  const meds = (bundle?.medications || []).slice(0, 10);
+  const alerts = (bundle?.alerts || []).slice(0, 8);
+  const abnormalLabs = pickAbnormalLabs(bundle?.labs || [], 8);
+
+  const bullets = [];
+  const medItems = meds.map((m) => `${m.drug} ${m.dose || ''}`.trim()).filter(Boolean);
+  const issueItems = alerts.map((a) => a.message).filter(Boolean);
+  const abnormalItems = abnormalLabs.map((l) => `${l.test} ${l.status} (${l.value}${l.unit || ''})`);
+  const medicationIntent = q.includes('med') || q.includes('drug') || q.includes('prescription');
+  const historyIntent = q.includes('history') || q.includes('visit') || q.includes('past');
+
+  bullets.push(`**Patient:** ${p.name || 'Unknown'} (${p.patient_id || 'NA'})`);
+  bullets.push(`**Diagnosis:** ${(p.diagnosis || []).join(', ') || 'Not available'}`);
+
+  if (medicationIntent && !detailed) {
+    bullets.push(`**Medications:** ${medItems.length ? compactList(medItems, 5) : 'No active medications found'}`);
+    bullets.push(`**Last visit:** ${formatDateSafe(lastVisit?.date)}${lastVisit?.doctor ? ` · ${lastVisit.doctor}` : ''}`);
+    if (reason) bullets.push(`**Note:** Groq limit (${reason}), showing fallback data.`);
+    return bullets.map((b) => `- ${b}`).join('\n');
+  }
+
+  if (historyIntent && !detailed) {
+    bullets.push(`**Last visit:** ${formatDateSafe(lastVisit?.date)}${lastVisit?.doctor ? ` · ${lastVisit.doctor}` : ''}${lastVisit?.doctor_notes ? ` · ${lastVisit.doctor_notes}` : ''}`);
+    bullets.push(`**Recent issues:** ${abnormalItems.length ? compactList(abnormalItems, 3) : (issueItems.length ? compactList(issueItems, 3) : 'No major issues noted')}`);
+    if (reason) bullets.push(`**Note:** Groq limit (${reason}), showing fallback data.`);
+    return bullets.map((b) => `- ${b}`).join('\n');
+  }
+
+  bullets.push(`**Current medications:** ${medItems.length ? compactList(medItems, detailed ? 8 : 4) : 'No active medications found'}`);
+  bullets.push(`**Abnormal labs/alerts:** ${(abnormalItems.length ? compactList(abnormalItems, detailed ? 6 : 3) : compactList(issueItems, detailed ? 6 : 3)) || 'Not available'}`);
+  bullets.push(`**Last visit:** ${formatDateSafe(lastVisit?.date)}${lastVisit?.doctor ? ` · ${lastVisit.doctor}` : ''}${lastVisit?.doctor_notes ? ` · ${lastVisit.doctor_notes}` : ''}`);
+  bullets.push('**Next steps:** Repeat key labs and schedule follow-up review.');
+
+  if (detailed) {
+    bullets.push('**Action plan:** Review adherence, reassess trends, and escalate specialist referral if worsening continues.');
+    bullets.push('**Safety:** Urgent review if red-flag symptoms or critical values appear.');
+  }
+
+  if (reason) bullets.push(`**Note:** Groq rate limit reached (${reason}). Returned from local fallback.`);
+  return bullets.slice(0, detailed ? 10 : 6).map((b) => `- ${b}`).join('\n');
+}
+
 async function ensureVectorContext(patientId, baseQuery) {
   await initIndex();
   let hits = await semanticSearch(baseQuery, patientId, 8);
@@ -80,30 +183,43 @@ Requirements:
 - No markdown headings, only bullet points.
 - End with one caution line: "Physician review required."`;
 
-  const response = await client.chat.completions.create({
-    model,
-    temperature: 0.2,
-    max_tokens: 700,
-    messages: [
-      { role: 'system', content: 'You are a clinical summarization assistant. Output concise bullets only.' },
-      { role: 'user', content: `${context}\n\n${prompt}` },
-    ],
-  });
+  try {
+    const response = await client.chat.completions.create({
+      model,
+      temperature: 0.2,
+      max_tokens: 700,
+      messages: [
+        { role: 'system', content: 'You are a clinical summarization assistant. Output concise bullets only.' },
+        { role: 'user', content: `${context}\n\n${prompt}` },
+      ],
+    });
 
-  const text = response.choices?.[0]?.message?.content || '';
-  const summary_points = text
-    .split('\n')
-    .map((line) => line.replace(/^[-*•\d.\s]+/, '').trim())
-    .filter(Boolean)
-    .slice(0, 10);
+    const text = response.choices?.[0]?.message?.content || '';
+    const summary_points = text
+      .split('\n')
+      .map((line) => line.replace(/^[-*•\d.\s]+/, '').trim())
+      .filter(Boolean)
+      .slice(0, 10);
 
-  return {
-    patientId,
-    source: bundle.source,
-    summary_points,
-    raw: text,
-    rag_hits: hits.slice(0, 5),
-  };
+    return {
+      patientId,
+      source: bundle.source,
+      summary_points,
+      raw: text,
+      rag_hits: hits.slice(0, 5),
+    };
+  } catch (err) {
+    if (!isGroqRateLimitError(err)) throw err;
+    const retryAfter = extractRetryAfterText(err);
+    return {
+      patientId,
+      source: 'fallback',
+      fallback: true,
+      summary_points: buildFallbackSummaryFromBundle(bundle, retryAfter || 'rate limit reached'),
+      raw: '',
+      rag_hits: hits.slice(0, 5),
+    };
+  }
 }
 
 async function runRagDoctorQuery(patientId, query, apiKey, model = 'llama-3.3-70b-versatile') {
@@ -165,19 +281,20 @@ async function runRagDoctorQuery(patientId, query, apiKey, model = 'llama-3.3-70
   const maxTokens = requestedWordCount ? 2200 : 900;
 
   const context = buildContextText(bundle, hits);
-  const response = await client.chat.completions.create({
-    model,
-    temperature: 0.3,
-    max_tokens: maxTokens,
-    messages: [
-      {
-        role: 'system',
-        content:
-          'You are an AI doctor assistant. Use RAG context first. Keep output normal, clean, and structured for fast clinical reading.',
-      },
-      {
-        role: 'user',
-        content: `Question: ${query}
+  try {
+    const response = await client.chat.completions.create({
+      model,
+      temperature: 0.3,
+      max_tokens: maxTokens,
+      messages: [
+        {
+          role: 'system',
+          content:
+            'You are an AI doctor assistant. Use RAG context first. Keep output normal, clean, and structured for fast clinical reading.',
+        },
+        {
+          role: 'user',
+          content: `Question: ${query}
 
 Formatting requirements:
 - ${lengthInstruction}
@@ -188,16 +305,28 @@ Formatting requirements:
 
 Context:
 ${context}`,
-      },
-    ],
-  });
+        },
+      ],
+    });
 
-  return {
-    patientId: effectivePatientId,
-    source: bundle.source,
-    answer: response.choices?.[0]?.message?.content || '',
-    rag_hits: hits.slice(0, 5),
-  };
+    return {
+      patientId: effectivePatientId,
+      source: bundle.source,
+      answer: response.choices?.[0]?.message?.content || '',
+      rag_hits: hits.slice(0, 5),
+    };
+  } catch (err) {
+    if (!isGroqRateLimitError(err)) throw err;
+    const retryAfter = extractRetryAfterText(err) || 'please retry shortly';
+    return {
+      patientId: effectivePatientId,
+      source: 'fallback',
+      fallback: true,
+      answer: buildFallbackAnswerFromBundle(bundle, query, retryAfter),
+      rag_hits: hits.slice(0, 5),
+      limit_reason: retryAfter,
+    };
+  }
 }
 
 module.exports = { runRagPatientSummary, runRagDoctorQuery };
